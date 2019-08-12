@@ -1,4 +1,10 @@
 $(document).ready(function() {
     console.log("i love you");
-    $('wrapper').fullpage();
+    
+    new fullpage('#fullPage', {
+        autoScrolling: true,
+        navigation: true,
+        navigationPosition: 'left',
+        scrollingSpeed: 2000
+    });
 });
