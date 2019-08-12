@@ -5,6 +5,7 @@ $(document).ready(function() {
         autoScrolling: true,
         navigation: true,
         navigationPosition: 'left',
-        scrollingSpeed: 2000
+        scrollingSpeed: 1000
     });
+    
 });

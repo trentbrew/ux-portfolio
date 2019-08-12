@@ -1689,6 +1689,15 @@
                 localIsResizing: isResizing
             };
 
+            console.log(v.sectionIndex);
+
+            if (v.sectionIndex > 0) {
+                document.querySelector('.white-container').style.width = '40%';
+            }
+            else {
+                document.querySelector('.white-container').style.width = '70%';
+            }
+
             //quiting when destination scroll is the same as the current one
             if((v.activeSection == element && !isResizing) || (options.scrollBar && getScrollTop() === v.dtop && !hasClass(element, AUTO_HEIGHT) )){ return; }
 
