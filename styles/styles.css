@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Nunito', Helvetica, sans-serif;
 }
 
 .fullPage {
@@ -43,12 +43,255 @@ body {
 
 .white-container {
   height: 100vh;
-  width: 70%;
+  width: 80%;
   position: fixed;
   right: 0px;
   background: white;
   z-index: 1;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 2s;
+  transition: 2s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bubble-container {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  right: 0px;
+  bottom: 0px;
+  padding: 120px 80px 80px 80px;
+  z-index: 6;
+  opacity: 0.8;
+}
+
+.bubbles-res {
+  display: none;
+}
+
+h3 {
+  color: rgba(0, 0, 0, 0.4);
+  margin-bottom: 25px;
+  opacity: 0.4;
+}
+
+.social-bubble {
+  width: 25px;
+  height: 25px;
+  margin-right: 15px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 5px;
+}
+
+.social-bubble:hover {
+  cursor: pointer;
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+}
+
+#facebook {
+  background-image: url("../res/facebook-icon-min.png");
+}
+
+#instagram {
+  background-image: url("../res/insta-icon-min.png");
+}
+
+#twitter {
+  background-image: url("../res/twitter-icon-min.png");
+}
+
+#pinterest {
+  background-image: url("../res/pinterest-icon-min.png");
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.sec1 {
+  background: #3E5B83;
+}
+
+.sec2 {
+  background: #4F8BB0;
+}
+
+.sec3 {
+  background: #95C5BA;
+}
+
+.sec4 {
+  background: #E5BDBD;
+}
+
+.wave {
+  width: 140px;
+  height: 100vh;
+  background: url("../res/wave.svg") repeat-y;
+  -webkit-animation: wave 8s linear infinite;
+          animation: wave 8s linear infinite;
+  pointer-events: none;
+  z-index: 2;
+  margin-left: -120px;
+}
+
+.hero-image {
+  background: black;
+  background-image: url("../res/me.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 300px;
+  margin-right: 50px;
+  border-radius: 100%;
+  -webkit-transition: 2s;
+  transition: 2s;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+.center-container {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 0;
+  bottom: 0;
+  left: 20%;
+  right: 0;
+  z-index: 2;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-transition: 2.5s;
+  transition: 2.5s;
+}
+
+.center-container h1 {
+  font-size: 42px;
+  opacity: 0.6;
+}
+
+.center-container p {
+  font-size: 22px;
+  opacity: 0.4;
+}
+
+.nav {
+  position: fixed;
+  height: 60px;
+  width: 100%;
+  z-index: 50;
+  top: 0px;
+  font-size: 13px !important;
+}
+
+.nav .nav-links {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.nav h2 {
+  position: absolute;
+  margin-left: 45px;
+  opacity: 1;
+  line-height: 30px;
+}
+
+.nav ul {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  list-style: none;
+  padding: 25px 50px 25px 25px;
+  float: right;
+}
+
+.nav ul a {
+  text-decoration: none;
+  height: 60px;
+}
+
+.nav ul a:hover .indicator {
+  width: 50%;
+}
+
+.nav ul li {
+  margin-left: 12px;
+  margin-right: 12px;
+  line-height: 60px;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.nav-indicator {
+  background: black;
+  height: 3px;
+  border-radius: 50px 50px 0px 0px;
+  width: 0%;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -3px;
+}
+
+.nav-active {
+  background: #3E5B83;
+  height: 3px;
+  border-radius: 50px 50px 0px 0px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -3px;
+}
+
+@-webkit-keyframes wave {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: 0px -1600px;
+  }
+}
+
+@keyframes wave {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: 0px -1600px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .white-container {
+    width: 100% !important;
+    height: 30vh;
+    top: 0px;
+  }
+  #fp-nav {
+    margin-left: 0px !important;
+    top: calc(70% - 35px) !important;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

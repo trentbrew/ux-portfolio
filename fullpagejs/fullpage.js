@@ -1692,10 +1692,18 @@
             console.log(v.sectionIndex);
 
             if (v.sectionIndex > 0) {
-                document.querySelector('.white-container').style.width = '40%';
+                document.querySelector('.white-container').style.width = '20%';
+                document.querySelector('.center-container').style.opacity = '0';
+                document.querySelector('.center-container').style.transform = 'translateX(1200px)';
+                document.querySelector('.hero-image').style.width = '45px';
+                document.querySelector('.hero-image').style.height = '45px';
             }
             else {
-                document.querySelector('.white-container').style.width = '70%';
+                document.querySelector('.white-container').style.width = '80%';
+                document.querySelector('.center-container').style.opacity = '1';
+                document.querySelector('.center-container').style.transform = 'translateX(0px)';
+                document.querySelector('.hero-image').style.width = '300px';
+                document.querySelector('.hero-image').style.height = '300px';
             }
 
             //quiting when destination scroll is the same as the current one

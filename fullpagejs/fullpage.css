@@ -101,7 +101,7 @@ html.fp-enabled,
     margin-top: -32px;
     top: 50%;
     opacity: 1;
-    margin-left: 40px;
+    margin-left: 70px;
     -webkit-transform: translate3d(0,0,0);
 }
 #fp-nav.fp-right {
@@ -159,7 +159,8 @@ html.fp-enabled,
 .fp-slidesNav ul li:hover a.active span{
     height: 12px;
     width: 12px;
-    margin: -6px 0 0 -6px;
+    opacity: 1;
+    /*margin: -6px 0 0 -6px;*/
     border-radius: 100%;
  }
 #fp-nav ul li a span,
@@ -167,10 +168,11 @@ html.fp-enabled,
     border-radius: 50%;
     position: absolute;
     z-index: 1;
-    height: 4px;
-    width: 4px;
+    height: 12px;
+    width: 12px;
     border: 0;
     background: #fff;
+    opacity: 0.3;
     left: 50%;
     top: 50%;
     margin: -2px 0 0 -2px;
@@ -181,9 +183,9 @@ html.fp-enabled,
 }
 #fp-nav ul li:hover a span,
 .fp-slidesNav ul li:hover a span{
-    width: 10px;
-    height: 10px;
-    margin: -5px 0px 0px -5px;
+    width: 20px;
+    height: 12px;
+    /*margin: -5px 0px 0px -5px;*/
 }
 #fp-nav ul li .fp-tooltip {
     position: absolute;
