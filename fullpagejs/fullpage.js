@@ -1671,6 +1671,10 @@
             var slideAnchorLink;
             var slideIndex;
 
+            const ind1 = document.querySelector('.ind1');
+            const ind2 = document.querySelector('.ind2');
+            const ind3 = document.querySelector('.ind3');
+
             //local variables
             var v = {
                 element: element,
@@ -1697,6 +1701,7 @@
                 document.querySelector('.center-container').style.transform = 'translateX(1200px)';
                 document.querySelector('.hero-image').style.width = '45px';
                 document.querySelector('.hero-image').style.height = '45px';
+                //document.querySelector('.wave').style.backgroundPositionY = '180%';
             }
             else {
                 document.querySelector('.white-container').style.width = '80%';
@@ -1704,6 +1709,23 @@
                 document.querySelector('.center-container').style.transform = 'translateX(0px)';
                 document.querySelector('.hero-image').style.width = '300px';
                 document.querySelector('.hero-image').style.height = '300px';
+                //document.querySelector('.wave').style.backgroundPositionY = '50%';
+            }
+
+            if(v.sectionIndex == 3) {
+                console.log('mark contact');
+
+                ind1.style.width = '0%';
+                ind2.style.width = '0%';
+                ind3.style.width = '50%';
+            }
+
+            if(v.sectionIndex < 3) {
+                console.log('mark contact');
+
+                ind1.style.width = '50%';
+                ind2.style.width = '0%';
+                ind3.style.width = '0%';
             }
 
             //quiting when destination scroll is the same as the current one
@@ -3300,6 +3322,8 @@
             if(all){
                 destroyStructure();
             }
+
+
         }
 
         /*
@@ -3507,6 +3531,8 @@
             //gets the top property of the wrapper
             return position;
         }
+
+        
 
         /**
         * Simulates the animated scrollTop of jQuery. Used when css3:false or scrollBar:true or autoScrolling:false

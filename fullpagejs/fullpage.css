@@ -108,7 +108,7 @@ html.fp-enabled,
     right: 17px;
 }
 #fp-nav.fp-left {
-    left: 17px;
+    left: 1%;
 }
 .fp-slidesNav{
     position: absolute;
@@ -172,7 +172,7 @@ html.fp-enabled,
     width: 12px;
     border: 0;
     background: #fff;
-    opacity: 0.3;
+    opacity: 0.2;
     left: 50%;
     top: 50%;
     margin: -2px 0 0 -2px;
@@ -183,8 +183,9 @@ html.fp-enabled,
 }
 #fp-nav ul li:hover a span,
 .fp-slidesNav ul li:hover a span{
-    width: 20px;
+    width: 12px;
     height: 12px;
+    opacity: 0.6;
     /*margin: -5px 0px 0px -5px;*/
 }
 #fp-nav ul li .fp-tooltip {
