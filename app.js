@@ -1,6 +1,47 @@
 $(document).ready(function() {
     console.log("i love you");
+
+    const heroImg = $('.hero-image');
+    const heroText = $('.hero-text');
+    const whiteContainer = $('.white-container');
+    const pageContainer = $('.page-container');
+    const download = $('.download');
+    const back = $('.back');
+    const portfolioLink = $('.portfolio');
+    const resumeLink = $('.resume');
+    const contactLink = $('.contact');
+    const nav = $('.nav');
+    const social = $('.social-bubble');
+
+    whiteContainer.css({
+        width: '80%'
+    });
+
+    setTimeout(function() {
+        heroImg.css({
+            opacity: 1,
+            marginLeft: '80px',
+            marginRight: '50px'
+        });
     
+    }, 1000);
+
+    setTimeout(function() {
+        heroText.css({
+            opacity: 1,
+            //marginLeft: '80px'
+        });
+
+        nav.css({
+            opacity: 1
+        });
+
+        social.css({
+            opacity: 1
+        });
+    
+    }, 2000);
+
     new fullpage('#fullPage', {
         autoScrolling: true,
         navigation: true,
@@ -8,22 +49,22 @@ $(document).ready(function() {
         scrollingSpeed: 1000
     });
 
-    $('.page-container').css({
+    pageContainer.css({
         marginTop: '140px',
         opacity: 1
     });
 
-    $('.download').css({
+    download.css({
         opacity: 1,
         marginTop: '0px'
     });
     
-    $('.back').css({
+    back.css({
         opacity: 1,
         marginTop: '0px'
     });
 
-    $('.portfolio').click(function() {
+    portfolioLink.click(function() {
         fullpage_api.setAutoScrolling(true);
 
         fullpage_api.moveTo(1);
@@ -33,7 +74,7 @@ $(document).ready(function() {
         $('.ind3').css('width','0%');
     });
 
-    $('.resume').click(function() {
+    resumeLink.click(function() {
         $('.ind1').css('width','0%');
         $('.ind2').css('width','50%');
         $('.ind3').css('width','0%');
@@ -48,18 +89,18 @@ $(document).ready(function() {
         }, 1000);
     });
 
-    $('.back').click(function() {
-        $('.page-container').css({
+    back.click(function() {
+        pageContainer.css({
             marginTop: '100vh',
             opacity: 0
         });
 
-        $('.download').css({
+        download.css({
             opacity: 0,
             marginTop: '50px'
         });
         
-        $('.back').css({
+        back.css({
             opacity: 0,
             marginTop: '50px'
         });
@@ -71,7 +112,7 @@ $(document).ready(function() {
         }, 1000);
     });
 
-    $('.contact').click(function() {
+    contactLink.click(function() {
         fullpage_api.setAutoScrolling(true);
         fullpage_api.moveTo(4);
         

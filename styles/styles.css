@@ -39,7 +39,7 @@ body {
 
 .white-container {
   height: 100vh;
-  width: 80%;
+  width: 100%;
   position: fixed;
   right: 0px;
   background: white;
@@ -88,6 +88,9 @@ h3 {
   background-size: contain;
   background-repeat: no-repeat;
   margin-top: 5px;
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .social-bubble:hover {
@@ -173,12 +176,19 @@ a {
   background-repeat: no-repeat;
   height: 300px;
   width: 300px;
-  margin-right: 50px;
+  margin-left: -200px;
   border-radius: 100%;
   -webkit-transition: 2s;
   transition: 2s;
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
+  opacity: 0;
+}
+
+.hero-text {
+  -webkit-transition: 2s;
+  transition: 2s;
+  opacity: 0;
 }
 
 .center-container {
@@ -220,6 +230,9 @@ a {
   z-index: 50;
   top: 0px;
   font-size: 13px !important;
+  -webkit-transition: 1s;
+  transition: 1s;
+  opacity: 0;
 }
 
 .nav .nav-links {
