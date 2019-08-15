@@ -118,41 +118,52 @@ a {
 }
 
 .section {
-  background: black !important;
+  -webkit-transition: 300ms;
+  transition: 300ms;
 }
 
 .sec1 {
-  background: -webkit-gradient(linear, left top, left bottom, from(#4281cf), to(#39587b));
-  background: linear-gradient(#4281cf, #39587b);
+  background: -webkit-gradient(linear, left top, left bottom, from(#88C49F), to(#88A8C6));
+  background: linear-gradient(#88C49F, #88A8C6);
 }
 
 .sec2 {
-  background: -webkit-gradient(linear, left top, left bottom, from(#39587b), to(#293f57));
-  background: linear-gradient(#39587b, #293f57);
+  background: -webkit-gradient(linear, left top, left bottom, from(#88A8C6), to(#CEACD5));
+  background: linear-gradient(#88A8C6, #CEACD5);
 }
 
 .sec3 {
-  background: -webkit-gradient(linear, left top, left bottom, from(#293f57), to(#141f2c));
-  background: linear-gradient(#293f57, #141f2c);
+  background: -webkit-gradient(linear, left top, left bottom, from(#CEACD5), to(#c48181));
+  background: linear-gradient(#CEACD5, #c48181);
 }
 
 .sec4 {
-  background: -webkit-gradient(linear, left top, left bottom, from(#141f2c), to(black));
-  background: linear-gradient(#141f2c, black);
+  background: -webkit-gradient(linear, left top, left bottom, from(#c48181), to(#ccab5e));
+  background: linear-gradient(#c48181, #ccab5e);
 }
 
 .wave {
   width: 140px;
   height: 100vh;
   background: url("../res/wave.svg") repeat-y;
-  -webkit-animation: wave 8s linear infinite;
-          animation: wave 8s linear infinite;
   pointer-events: none;
   z-index: 2;
-  margin-left: -120px;
+  margin-left: -130px;
   pointer-events: none;
+  background-position-y: 50%;
   -webkit-transition: 1s;
   transition: 1s;
+}
+
+.next-page-cover {
+  width: 100%;
+  height: 0%;
+  background: #e0e0e0;
+  position: fixed;
+  bottom: 0px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  z-index: 999;
 }
 
 .hero-image {
@@ -316,6 +327,8 @@ a {
   width: 250px;
   height: 125px;
   border-radius: 10px;
+  -webkit-box-shadow: 0px 7px 17px -1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 7px 17px -1px rgba(0, 0, 0, 0.2);
 }
 
 .port-text {
@@ -323,8 +336,14 @@ a {
   opacity: 0.8;
 }
 
+.port-text h1 {
+  color: white;
+  opacity: 0.9;
+}
+
 .port-text p {
-  opacity: 0.6;
+  color: white;
+  opacity: 0.8;
 }
 
 .port-img1 {
@@ -391,6 +410,8 @@ a {
           filter: invert(1);
   width: 60px;
   height: 60px;
+  -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+          box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
 }
 
 .email {
@@ -403,6 +424,8 @@ a {
           filter: invert(1);
   width: 60px;
   height: 60px;
+  -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+          box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
 }
 
 .sm {
@@ -415,6 +438,8 @@ a {
           filter: invert(1);
   width: 60px;
   height: 60px;
+  -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+          box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
 }
 
 .sm p {
@@ -422,7 +447,7 @@ a {
 }
 
 .sm-container:hover {
-  background: black;
+  background: rgba(0, 0, 0, 0);
   cursor: default;
 }
 
@@ -457,6 +482,325 @@ a {
   100% {
     background-position: 0px -1600px;
   }
+}
+
+.page-container {
+  background-color: #fff;
+  margin: 100vh auto 80px auto;
+  border-radius: 10px 10px 10px 10px;
+  max-width: 1100px;
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.page-container a {
+  text-decoration: none;
+}
+
+.page-container a:hover {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #676767;
+          text-decoration-color: #676767;
+}
+
+.page-container .first {
+  list-style: none;
+}
+
+.page-container h3 {
+  color: black !important;
+  margin-top: 20px;
+}
+
+.res-head {
+  background-color: #fff;
+  padding: 40px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.res-head .circle-image {
+  background-color: #E0E0E0;
+  height: 80px;
+  width: 80px;
+  border-radius: 100%;
+  background-image: url("../res/me_2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.res-head .head-text h1 {
+  font-weight: normal;
+  margin: 18px 0px 12px 0px;
+}
+
+.res-head .head-text p {
+  color: #676767;
+  margin: 5px 5px 20px 5px;
+  font-size: 14px;
+}
+
+.res-neck {
+  background-color: black;
+  padding: 10px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.res-neck .res-contact {
+  line-height: 14px;
+}
+
+.res-neck .res-contact .contact {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.res-neck .res-contact .contact .contact-icon {
+  width: 15px;
+  margin: 0px 15px 0px 15px;
+  background-repeat: no-repeat;
+}
+
+.res-neck .res-contact .contact #phone {
+  background-image: url("../res/phone.png");
+  background-position: center;
+  background-size: contain;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.res-neck .res-contact .contact #email {
+  background-image: url("../res/email.png");
+  background-position: center;
+  background-size: contain;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.res-neck .res-contact .contact #github {
+  background-image: url("../res/github.png");
+  background-position: center;
+  background-size: contain;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.res-neck .res-contact .contact #linkedin {
+  background-image: url("../res/linkedin.png");
+  background-position: center;
+  background-size: contain;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.res-body {
+  background-color: #fff;
+  padding: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+  border-radius: 0px 0px 15px 15px;
+}
+
+.res-body h3 {
+  font-weight: normal;
+  color: #707070;
+  margin-top: 30px;
+}
+
+.res-body p {
+  color: #676767;
+  font-size: 12px;
+}
+
+.res-body .body-container {
+  padding: 30px;
+}
+
+.res-body .res-ex p {
+  margin: 0px;
+}
+
+.res-body .res-ex span {
+  font-weight: lighter;
+  color: #676767;
+}
+
+.res-body h2 {
+  font-size: 20px;
+  margin-top: 40px;
+  color: black;
+  line-height: 1.4;
+}
+
+.res-body .res-sum a {
+  color: #676767;
+  font-size: 12px;
+}
+
+.res-body .res-sum p {
+  font-size: 12px;
+}
+
+.res-body .res-sum li {
+  font-size: 12px;
+  color: #676767;
+}
+
+.res-body .res-sum #research-list h2 {
+  font-size: 16px;
+  margin-top: 40px;
+  color: black;
+  line-height: normal;
+}
+
+.res-body .res-sum .project {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 12px;
+  font-weight: bold;
+  color: #676767;
+  padding-top: 10px;
+}
+
+.res-body .res-sum .project #fav1 {
+  background-image: url("../res/puzzle.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.res-body .res-sum .project #fav2 {
+  background-image: url("../res/lock.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.res-body .res-sum .project #fav3 {
+  background-image: url("../res/music-icon1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.res-body .res-sum .project #fav4 {
+  background-image: url("../res/sonic2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  -webkit-filter: brightness(0);
+          filter: brightness(0);
+}
+
+.res-body .res-sum .project #fav5 {
+  background-image: url("../res/ring.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  -webkit-filter: brightness(0);
+          filter: brightness(0);
+}
+
+.res-body .res-sum .favicon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  opacity: 0.5;
+}
+
+.res-body .res-sum span {
+  background-color: black;
+  color: white;
+  font-size: 12px;
+  padding: 5px;
+  line-height: 28px;
+  border-radius: 5px;
+}
+
+.res-body .res-sum span span {
+  padding: 0px;
+  color: black;
+}
+
+.download {
+  position: fixed;
+  background: black;
+  width: 200px;
+  height: 60px;
+  border-radius: 10px;
+  top: 40px;
+  right: 60px;
+  color: white;
+  text-align: center;
+  line-height: 60px;
+  border: solid black 2px;
+  opacity: 0;
+  -webkit-transition: background-color 300ms, margin-top 1s, opacity 1s;
+  transition: background-color 300ms, margin-top 1s, opacity 1s;
+  z-index: 6;
+  margin-top: 50px;
+}
+
+.download:hover {
+  cursor: pointer;
+  background-color: #e0e0e0;
+  color: black;
+}
+
+.back {
+  position: fixed;
+  width: 200px;
+  height: 60px;
+  border-radius: 10px;
+  top: 40px;
+  left: 60px;
+  color: black;
+  text-align: center;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+  z-index: 6;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px;
+}
+
+.back .back-arrow {
+  background-image: url("../res/arrow.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 32px;
+  margin-right: 26px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.back:hover {
+  cursor: pointer;
+}
+
+.back:hover .back-arrow {
+  -webkit-transform: translateX(-15px);
+          transform: translateX(-15px);
 }
 
 @media only screen and (max-width: 768px) {

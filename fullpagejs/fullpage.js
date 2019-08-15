@@ -1701,7 +1701,7 @@
                 document.querySelector('.center-container').style.transform = 'translateX(1200px)';
                 document.querySelector('.hero-image').style.width = '45px';
                 document.querySelector('.hero-image').style.height = '45px';
-                //document.querySelector('.wave').style.backgroundPositionY = '180%';
+                document.querySelector('.wave').style.backgroundPositionY = '180%';
             }
             else {
                 document.querySelector('.white-container').style.width = '80%';
@@ -1709,7 +1709,18 @@
                 document.querySelector('.center-container').style.transform = 'translateX(0px)';
                 document.querySelector('.hero-image').style.width = '300px';
                 document.querySelector('.hero-image').style.height = '300px';
-                //document.querySelector('.wave').style.backgroundPositionY = '50%';
+                document.querySelector('.wave').style.backgroundPositionY = '50%';
+            }
+
+            if(v.sectionIndex == 0) {
+
+            }
+
+            if(v.sectionIndex == 1) {
+
+            }
+
+            if(v.sectionIndex == 2) {
             }
 
             if(v.sectionIndex == 3) {
@@ -1721,7 +1732,6 @@
             }
 
             if(v.sectionIndex < 3) {
-                console.log('mark contact');
 
                 ind1.style.width = '50%';
                 ind2.style.width = '0%';

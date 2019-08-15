@@ -101,7 +101,7 @@ html.fp-enabled,
     margin-top: -32px;
     top: 50%;
     opacity: 1;
-    margin-left: 70px;
+    margin-left: 4.5%;
     -webkit-transform: translate3d(0,0,0);
 }
 #fp-nav.fp-right {
@@ -172,7 +172,7 @@ html.fp-enabled,
     width: 12px;
     border: 0;
     background: #fff;
-    opacity: 0.2;
+    opacity: 0.3;
     left: 50%;
     top: 50%;
     margin: -2px 0 0 -2px;
