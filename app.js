@@ -5,6 +5,7 @@ $(document).ready(function() {
     const heroText = $('.hero-text');
     const whiteContainer = $('.white-container');
     const pageContainer = $('.page-container');
+    const studyContainer = $('.study-container');
     const download = $('.download');
     const back = $('.back');
     const portfolioLink = $('.portfolio');
@@ -12,6 +13,111 @@ $(document).ready(function() {
     const contactLink = $('.contact');
     const nav = $('.nav');
     const social = $('.social-bubble');
+
+    const item1 = $('.item1');
+    const item2 = $('.item2');
+    const item3 = $('.item3');
+    const item4 = $('.item4');
+    const item5 = $('.item5');
+    const item6 = $('.item6');
+    const item7 = $('.item7');
+    const item8 = $('.item8');
+
+    item1.click(function() {
+        $('.next-page-cover').css({
+            backgroundColor: '#88A8C6',
+            height: '100%',
+        });
+
+        setTimeout(function() {
+            console.log('open resume link');
+            window.open('floors.html',"_self");
+        }, 1000); 
+    });
+
+    item2.click(function() {
+        $('.next-page-cover').css({
+            backgroundColor: '#C0D7D6',
+            height: '100%',
+        });
+
+        setTimeout(function() {
+            console.log('open resume link');
+            window.open('floors.html',"_self");
+        }, 1000); 
+    });
+
+    item3.click(function() {
+        $('.next-page-cover').css({
+            backgroundColor: '#16B246',
+            height: '100%',
+        });
+
+        setTimeout(function() {
+            console.log('open resume link');
+            window.open('floors.html',"_self");
+        }, 1000); 
+    });
+
+    item4.click(function() {
+        $('.next-page-cover').css({
+            backgroundColor: '#2B98EC',
+            height: '100%',
+        });
+
+        setTimeout(function() {
+            console.log('open resume link');
+            window.open('floors.html',"_self");
+        }, 1000); 
+    });
+
+    item5.click(function() {
+        $('.next-page-cover').css({
+            backgroundColor: '#FB8C6A',
+            height: '100%',
+        });
+
+        setTimeout(function() {
+            console.log('open resume link');
+            window.open('floors.html',"_self");
+        }, 1000); 
+    });
+
+    item6.click(function() {
+        $('.next-page-cover').css({
+            backgroundColor: '#7C7C7C',
+            height: '100%',
+        });
+
+        setTimeout(function() {
+            console.log('open resume link');
+            window.open('floors.html',"_self");
+        }, 1000); 
+    });
+
+    item7.click(function() {
+        $('.next-page-cover').css({
+            backgroundColor: '#FDB044',
+            height: '100%',
+        });
+
+        setTimeout(function() {
+            console.log('open resume link');
+            window.open('floors.html',"_self");
+        }, 1000); 
+    });
+
+    item8.click(function() {
+        $('.next-page-cover').css({
+            backgroundColor: '#594FCC',
+            height: '100%',
+        });
+
+        setTimeout(function() {
+            console.log('open resume link');
+            window.open('floors.html',"_self");
+        }, 1000); 
+    });
 
     whiteContainer.css({
         width: '80%'
@@ -24,7 +130,7 @@ $(document).ready(function() {
             marginRight: '50px'
         });
     
-    }, 1000);
+    }, 500);
 
     setTimeout(function() {
         heroText.css({
@@ -40,7 +146,7 @@ $(document).ready(function() {
             opacity: 1
         });
     
-    }, 2000);
+    }, 1000);
 
     new fullpage('#fullPage', {
         autoScrolling: true,
@@ -51,6 +157,11 @@ $(document).ready(function() {
 
     pageContainer.css({
         marginTop: '140px',
+        opacity: 1
+    });
+
+    studyContainer.css({
+        marginTop: '0px',
         opacity: 1
     });
 
@@ -91,6 +202,11 @@ $(document).ready(function() {
 
     back.click(function() {
         pageContainer.css({
+            marginTop: '100vh',
+            opacity: 0
+        });
+
+        studyContainer.css({
             marginTop: '100vh',
             opacity: 0
         });
