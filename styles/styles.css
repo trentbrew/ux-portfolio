@@ -47,7 +47,7 @@ body {
   width: 100%;
   position: fixed;
   right: 0px;
-  background: white;
+  background: black;
   z-index: 1;
   -webkit-transition: 2s;
   transition: 2s;
@@ -153,6 +153,8 @@ a {
   background-position-y: 50%;
   -webkit-transition: 1s;
   transition: 1s;
+  -webkit-filter: invert(1);
+          filter: invert(1);
 }
 
 .next-page-cover {
@@ -188,6 +190,7 @@ a {
   transition: 2s;
   opacity: 0;
   margin-left: -200px;
+  color: white;
 }
 
 .center-container {
@@ -214,12 +217,12 @@ a {
 
 .center-container h1 {
   font-size: 42px;
-  opacity: 0.6;
+  opacity: 1;
 }
 
 .center-container p {
   font-size: 22px;
-  opacity: 0.4;
+  opacity: 0.6;
 }
 
 .nav {
@@ -232,6 +235,8 @@ a {
   -webkit-transition: 1s;
   transition: 1s;
   opacity: 0;
+  -webkit-filter: invert(1);
+          filter: invert(1);
 }
 
 .nav .nav-links {
@@ -1112,6 +1117,13 @@ a {
   margin-top: 100px;
 }
 
+#fp-nav {
+  -webkit-transition: 2s;
+  transition: 2s;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
 @media only screen and (max-width: 768px) {
   .white-container {
     width: 100% !important;
@@ -1323,6 +1335,19 @@ a {
     background-image: url("../res/portfolio-images/key.png");
     -webkit-filter: invert(1);
             filter: invert(1);
+  }
+  .back {
+    background: white;
+    padding: 10px 0px 10px 30px;
+    -webkit-box-shadow: 0px 7px 17px -1px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 7px 17px -1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    font-size: 12px;
+    margin-left: -20px;
+  }
+  .back .back-arrow {
+    background-size: 60%;
+    height: 20px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

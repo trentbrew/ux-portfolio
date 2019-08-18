@@ -49,7 +49,7 @@ body {
     width: 100%;
     position: fixed;
     right: 0px;
-    background: white;
+    background: black;
     z-index: 1;
     transition: 2s;
     display: flex;
@@ -170,6 +170,7 @@ body {
     pointer-events: none;
     background-position-y: 50%;
     transition: 1s;
+    filter: invert(1);
 }
 
   .next-page-cover {
@@ -201,6 +202,7 @@ body {
       transition: 2s;
       opacity: 0;
       margin-left: -200px;
+      color: white;
   }
 
   .center-container {
@@ -221,12 +223,12 @@ body {
 
       h1 {
           font-size: 42px;
-          opacity: 0.6;
+          opacity: 1;
       }
 
       p {
           font-size: 22px;
-          opacity: 0.4;
+          opacity: 0.6;
       }
   }
 
@@ -240,6 +242,7 @@ body {
     font-size: 13px !important;
     transition: 1s;
     opacity: 0;
+    filter: invert(1);
     //box-shadow: 0px 5px 15px 5px rgba(black,.1);
   
     .nav-links {
@@ -998,6 +1001,7 @@ body {
       padding: 0px 80px 80px 80px;
       z-index: 6;
       opacity: 0.8;
+      //filter: invert(1);
     }
   }
 
@@ -1145,6 +1149,12 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-top: 100px; 
+  }
+
+  #fp-nav {
+    //margin-right: 100px;
+    transition: 2s;
+    filter: invert(1);
   }
 
 @media only screen and (max-width: 768px) {
@@ -1387,6 +1397,21 @@ body {
       background-color: rgba(0,0,0,0);
       background-image: url('../res/portfolio-images/key.png');
       filter: invert(1);
+    }
+
+    .back {
+      background: white;
+      padding: 10px 0px 10px 30px;
+      box-shadow: 0px 7px 17px -1px rgba(0,0,0,0.2);
+      border-radius: 5px;
+      //opacity: 1 !important;
+      font-size: 12px;
+      margin-left: -20px;
+
+      .back-arrow {
+        background-size: 60%;
+        height: 20px;
+      }
     }
 }
 

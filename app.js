@@ -17,7 +17,7 @@ $(document).ready(function() {
     const social = $('.social-bubble');
     const studyBackdrop = $('.study-backdrop');
     const wave = $('.wave');
-    const sectionNav = $('.fp-nav');
+    const sectionNav = $('.fp-left');
     const projectHome = $('.project-home');
     const nextProject = $('.next-project');
     const next1 = $('.next1');
@@ -506,7 +506,9 @@ $(document).ready(function() {
         }, 1000); 
     });
 
-
+    sectionNav.css({
+        filter: 'invert(0)'
+    });
 
     whiteContainer.css({
         width: '80%'
@@ -654,7 +656,7 @@ $(document).ready(function() {
             }, 1000);
         }
         else {
-            $('body').css('background-color','white');
+            $('body').css('background-color','black');
 
             setTimeout(function() {
                 window.open('index.html', '_self');
@@ -710,7 +712,7 @@ $(document).ready(function() {
             }, 1000);
         }
         else {
-            $('body').css('background-color','white');
+            $('body').css('background-color','black');
 
             setTimeout(function() {
                 window.open('index.html', '_self');
