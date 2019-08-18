@@ -47,7 +47,7 @@ body {
   width: 100%;
   position: fixed;
   right: 0px;
-  background: black;
+  background: #121212;
   z-index: 1;
   -webkit-transition: 2s;
   transition: 2s;
@@ -153,8 +153,7 @@ a {
   background-position-y: 50%;
   -webkit-transition: 1s;
   transition: 1s;
-  -webkit-filter: invert(1);
-          filter: invert(1);
+  mix-blend-mode: darken;
 }
 
 .next-page-cover {
@@ -982,10 +981,13 @@ a {
   margin: auto;
   top: 60px;
   right: 0px;
-  bottom: 0px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   padding: 0px 80px 80px 80px;
   z-index: 6;
   opacity: 0.8;
+  margin: 0px !important;
 }
 
 .study-banner {
@@ -1120,8 +1122,6 @@ a {
 #fp-nav {
   -webkit-transition: 2s;
   transition: 2s;
-  -webkit-filter: invert(1);
-          filter: invert(1);
 }
 
 @media only screen and (max-width: 768px) {
@@ -1149,7 +1149,19 @@ a {
     display: none;
   }
   .home {
-    background: black;
+    background: #121212;
+  }
+  .home .nav {
+    -webkit-filter: invert(1);
+            filter: invert(1);
+  }
+  .home .nav-active {
+    -webkit-filter: invert(1) !important;
+            filter: invert(1) !important;
+  }
+  .home .nav-indicator {
+    -webkit-filter: invert(1) !important;
+            filter: invert(1) !important;
   }
   #fp-nav {
     margin-left: 0px !important;
@@ -1173,10 +1185,8 @@ a {
     padding: 0px;
     margin-left: auto;
     margin-right: auto;
-    color: white;
   }
   .nav li {
-    color: white !important;
     font-weight: normal;
     font-size: 12px !important;
   }
@@ -1203,7 +1213,6 @@ a {
             filter: invert(0);
     opacity: 1;
     position: relative;
-    margin-bottom: 100px;
   }
   .project-container {
     padding: 0px;
@@ -1249,6 +1258,7 @@ a {
   .center-container .hero-text {
     color: white;
     margin: 0px !important;
+    padding-bottom: 100px;
   }
   .center-container h1 {
     font-size: 28px;
@@ -1257,7 +1267,14 @@ a {
     font-size: 18px;
   }
   .white-container {
-    display: none;
+    position: absolute;
+    bottom: 0px;
+    top: auto;
+    background: #346791;
+    -webkit-transition: 1s;
+    transition: 1s;
+    height: 60px;
+    z-index: -1 !important;
   }
   .port-container {
     width: 100%;
@@ -1292,16 +1309,15 @@ a {
   }
   .port-img2 {
     background-color: rgba(0, 0, 0, 0);
-    background-image: url("../res/portfolio-images/backpack-barber/bb-logo.png");
-    border-radius: 100%;
-    -webkit-filter: grayscale(1);
-            filter: grayscale(1);
+    background-image: url("../res/portfolio-images/backpack-barber/bb-small.png");
+    width: 60px;
+    height: 60px;
   }
   .port-img3 {
     background-color: rgba(0, 0, 0, 0);
     background-image: url("../res/portfolio-images/spotify/s-logo.png");
-    -webkit-filter: grayscale(1);
-            filter: grayscale(1);
+    -webkit-filter: brightness(0) invert(1);
+            filter: brightness(0) invert(1);
   }
   .port-img4 {
     background-color: rgba(0, 0, 0, 0);
@@ -1325,9 +1341,9 @@ a {
   }
   .port-img7 {
     background-color: rgba(0, 0, 0, 0);
-    background-image: url("../res/portfolio-images/monday-logo.jpg");
-    -webkit-filter: grayscale(1);
-            filter: grayscale(1);
+    background-image: url("../res/portfolio-images/monday/monday-logo-2.png");
+    -webkit-filter: brightness(0) invert(1);
+            filter: brightness(0) invert(1);
     border-radius: 100%;
   }
   .port-img8 {
@@ -1348,6 +1364,9 @@ a {
   .back .back-arrow {
     background-size: 60%;
     height: 20px;
+  }
+  .next-project {
+    margin-top: 100px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

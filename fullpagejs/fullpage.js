@@ -1697,16 +1697,35 @@
 
             if (v.sectionIndex > 0) {
                 document.querySelector('.white-container').style.width = '20%';
-                document.querySelector('.center-container').style.opacity = '0';
-                document.querySelector('.center-container').style.transform = 'translateX(1200px)';
+
+                if(window.innerWidth <= 768) {
+                    document.querySelector('.center-container').style.transition = '2s';
+                    document.querySelector('.center-container').style.transform = 'translateY(-1200px)';
+                    document.querySelector('.white-container').style.height = '100vh';
+                    document.querySelector('.white-container').style.opacity = '0';
+                }
+                else {
+                    document.querySelector('.center-container').style.transform = 'translateX(1200px)';
+                }
+
                 //document.querySelector('.hero-image').style.width = '45px';
                 //document.querySelector('.hero-image').style.height = '45px';
                 document.querySelector('.wave').style.backgroundPositionY = '180%';
             }
             else {
                 document.querySelector('.white-container').style.width = '80%';
+
+                if(window.innerWidth <= 768) {
+                    document.querySelector('.center-container').style.transform = 'translateY(0px)';
+                    document.querySelector('.white-container').style.height = '60px';
+                    document.querySelector('.white-container').style.opacity = '1';
+                }
+                else {
+                    document.querySelector('.center-container').style.transform = 'translateX(0px)';
+                }
+
                 document.querySelector('.center-container').style.opacity = '1';
-                document.querySelector('.center-container').style.transform = 'translateX(0px)';
+                
                 //document.querySelector('.hero-image').style.width = '300px';
                 //document.querySelector('.hero-image').style.height = '300px';
                 document.querySelector('.wave').style.backgroundPositionY = '50%';
@@ -1717,7 +1736,7 @@
                 //document.querySelector('.home').style.filter = "";
 
                 if(window.innerWidth <= 768) {
-                    document.querySelector('.home').style.background = 'black';
+                    document.querySelector('.home').style.background = '#121212';
                 }
             }
 
@@ -1725,7 +1744,7 @@
                 document.querySelector('.home').style.background = '#346791';
                 
                 if(window.innerWidth <= 768) {
-                    document.querySelector('.home').style.background = 'black';
+                    document.querySelector('.home').style.background = '#346791';
                 }
             }
 
@@ -1733,7 +1752,7 @@
                 document.querySelector('.home').style.background = '#346791';
 
                 if(window.innerWidth <= 768) {
-                    document.querySelector('.home').style.background = 'black';
+                    document.querySelector('.home').style.background = '#346791';
                 }
             }
 

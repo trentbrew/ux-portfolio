@@ -49,7 +49,7 @@ body {
     width: 100%;
     position: fixed;
     right: 0px;
-    background: black;
+    background: rgb(18,18,18);
     z-index: 1;
     transition: 2s;
     display: flex;
@@ -170,7 +170,8 @@ body {
     pointer-events: none;
     background-position-y: 50%;
     transition: 1s;
-    filter: invert(1);
+    mix-blend-mode: darken;
+    //filter: invert(1);
 }
 
   .next-page-cover {
@@ -997,10 +998,11 @@ body {
       margin: auto;
       top: 60px;
       right: 0px;
-      bottom: 0px;
+      height: max-content;
       padding: 0px 80px 80px 80px;
       z-index: 6;
       opacity: 0.8;
+      margin: 0px !important;
       //filter: invert(1);
     }
   }
@@ -1154,7 +1156,7 @@ body {
   #fp-nav {
     //margin-right: 100px;
     transition: 2s;
-    filter: invert(1);
+    //filter: invert(1);
   }
 
 @media only screen and (max-width: 768px) {
@@ -1185,7 +1187,20 @@ body {
     }
 
     .home {
-      background: black;
+      background: #121212;
+
+      .nav {
+        filter: invert(1);
+      }
+
+      .nav-active {
+        filter: invert(1) !important;
+      }
+
+      
+      .nav-indicator {
+        filter: invert(1) !important;
+      }
 
       //color: black !important;
     }
@@ -1213,11 +1228,11 @@ body {
         padding: 0px;
         margin-left: auto;
         margin-right: auto;
-        color: white;
+        //color: white;
     }
 
     .nav li {
-        color: white !important;
+        //color: white !important;
         font-weight: normal;
         font-size: 12px !important;
     }
@@ -1250,7 +1265,7 @@ body {
         filter: invert(0);
         opacity: 1;
         position: relative;
-        margin-bottom: 100px;
+        //margin-bottom: 150px;
       }
     }
 
@@ -1294,7 +1309,7 @@ body {
         .hero-text {
           color: white;
           margin: 0px !important;
-
+          padding-bottom: 100px;
         }
 
         h1 {
@@ -1307,7 +1322,14 @@ body {
     }
 
     .white-container {
-        display: none;
+        //display: none;
+        position: absolute;
+        bottom: 0px;
+        top: auto;
+        background: #346791;
+        transition: 1s;
+        height: 60px;
+        z-index: -1 !important;
     }
 
     .port-container {
@@ -1315,6 +1337,7 @@ body {
         margin-left: auto;
         margin-right: auto;
         text-align: center;
+        
     }
 
     .port-item-container {
@@ -1354,15 +1377,15 @@ body {
 
     .port-img2 {
       background-color: rgba(0,0,0,0);
-      background-image: url('../res/portfolio-images/backpack-barber/bb-logo.png');
-      border-radius: 100%;
-      filter: grayscale(1);
+      background-image: url('../res/portfolio-images/backpack-barber/bb-small.png');
+      width: 60px;
+      height: 60px;
     }
 
     .port-img3 {
       background-color: rgba(0,0,0,0);
       background-image: url('../res/portfolio-images/spotify/s-logo.png');
-      filter: grayscale(1);
+      filter: brightness(0) invert(1);
     }
 
     .port-img4 {
@@ -1388,8 +1411,8 @@ body {
 
     .port-img7 {
       background-color: rgba(0,0,0,0);
-      background-image: url('../res/portfolio-images/monday-logo.jpg');
-      filter: grayscale(1);
+      background-image: url('../res/portfolio-images/monday/monday-logo-2.png');
+      filter: brightness(0) invert(1);
       border-radius: 100%;
     }
 
@@ -1412,6 +1435,10 @@ body {
         background-size: 60%;
         height: 20px;
       }
+    }
+
+    .next-project {
+      margin-top: 100px;
     }
 }
 

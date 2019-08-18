@@ -506,10 +506,6 @@ $(document).ready(function() {
         }, 1000); 
     });
 
-    sectionNav.css({
-        filter: 'invert(0)'
-    });
-
     whiteContainer.css({
         width: '80%'
     });
@@ -573,6 +569,10 @@ $(document).ready(function() {
         download.css({
             opacity: 1,
             marginTop: '0px'
+        });
+
+        sectionNav.css({
+            //filter: 'invert(1) !important'
         });
     
     }, 1000);
@@ -649,14 +649,14 @@ $(document).ready(function() {
     back.click(function() {
 
         if(window.innerWidth <=768) {
-            $('body').css('background-color','black');
+            $('body').css('background-color','#121212');
 
             setTimeout(function() {
                 window.open('index.html', '_self');
             }, 1000);
         }
         else {
-            $('body').css('background-color','black');
+            $('body').css('background-color','#121212');
 
             setTimeout(function() {
                 window.open('index.html', '_self');
@@ -705,14 +705,14 @@ $(document).ready(function() {
     
     back2.click(function() {
         if(window.innerWidth <=768) {
-            $('body').css('background-color','black');
+            $('body').css('background-color','#121212');
 
             setTimeout(function() {
                 window.open('index.html', '_self');
             }, 1000);
         }
         else {
-            $('body').css('background-color','black');
+            $('body').css('background-color','#121212');
 
             setTimeout(function() {
                 window.open('index.html', '_self');
