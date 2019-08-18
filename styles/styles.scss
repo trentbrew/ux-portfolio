@@ -322,6 +322,7 @@ body {
     //height: 70%;
     margin-left: 12%;
     color: white;
+    width: fit-content;
   }
 
   .port-item-container {
@@ -336,7 +337,7 @@ body {
       padding: 20px 40px 20px 20px;
       width: fit-content;
       border-radius: 20px;
-      transition: 300ms;
+      transition: background 300ms, margin-top 1s;
 
       &:hover {
           background: rgba(white, 0.2);

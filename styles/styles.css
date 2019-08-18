@@ -309,6 +309,9 @@ a {
 .port-container {
   margin-left: 12%;
   color: white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .port-item-container {
@@ -328,8 +331,8 @@ a {
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 20px;
-  -webkit-transition: 300ms;
-  transition: 300ms;
+  -webkit-transition: background 300ms, margin-top 1s;
+  transition: background 300ms, margin-top 1s;
 }
 
 .port-item-container:hover {

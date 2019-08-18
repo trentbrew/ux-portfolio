@@ -1703,6 +1703,7 @@
 
             if (v.sectionIndex > 0) {
                 document.querySelector('.white-container').style.width = '20%';
+                //document.querySelectorAll('.port-item-container').style.background = 'red';
 
                 if(window.innerWidth <= 768) {
                     document.querySelector('.center-container').style.transition = '2s';
