@@ -11,8 +11,8 @@ body {
 }
 
 .home {
-    transition: 1s;
-    background: #88C69D;
+    transition: 1.5s;
+    background: #346791;
 }
 
 .fullPage {
@@ -194,11 +194,13 @@ body {
       transition: 2s;
       filter: grayscale(1);
       opacity: 0;
+      display: none;
   }
 
   .hero-text {
       transition: 2s;
       opacity: 0;
+      margin-left: -200px;
   }
 
   .center-container {
@@ -345,7 +347,7 @@ body {
     width: 250px;
     height: 125px;
     border-radius: 10px;
-    box-shadow: 0px 7px 17px -1px rgba(0,0,0,0.2);
+    //box-shadow: 0px 7px 17px -1px rgba(0,0,0,0.2);
   }
 
   .port-text {
@@ -511,6 +513,10 @@ body {
     max-width: 1100px;
     opacity: 0;
     transition: 1s;
+
+    ul {
+      list-style: auto;
+    }
 
     a {
         text-decoration: none;
@@ -689,6 +695,8 @@ body {
       }
 
       #research-list {
+        padding: 0px;
+
         h2 {
             font-size: 16px;
             margin-top: 40px;
@@ -889,6 +897,7 @@ body {
     justify-content: center;
     color: white;
     transition: background 300ms, opacity 1s;
+    z-index: 12;
 
     &:hover {
       background: #578065;
@@ -976,6 +985,19 @@ body {
         opacity: 0.8;
         margin-bottom: 60px;
         margin-top: 60px;
+    }
+
+    .bubble-container {
+      position: fixed;
+      display: flex;
+      //width: 150px;
+      margin: auto;
+      top: 60px;
+      right: 0px;
+      bottom: 0px;
+      padding: 0px 80px 80px 80px;
+      z-index: 6;
+      opacity: 0.8;
     }
   }
 
@@ -1132,10 +1154,37 @@ body {
         top: 0px;
     }
 
+    .bubbles-res {
+      filter: invert(0) !important;
+      opacity: 1;
+      position: relative;
+      margin-bottom: 100px;
+    }
+
+    .download {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0px;
+      top: 0;
+      margin: auto !important;
+    }
+
+    .page-container {
+      display: none;
+    }
+
+    .home {
+      background: black;
+
+      //color: black !important;
+    }
+
     #fp-nav {
         margin-left: 0px !important;
         top: 50% !important;
         transform: scale(0.8) !important;
+        display: none;
     }
 
     #fp-nav li {
@@ -1171,6 +1220,42 @@ body {
         background: white;
     }
 
+    .study-container {
+      h1 {
+        font-size: 32px;
+      }
+
+      h2 {
+        font-size: 16px;
+      }
+
+      li {
+        font-size: 12px;
+      }
+
+      p {
+        font-size: 12px;
+      }
+      .bubble-container {
+        filter: invert(0);
+        opacity: 1;
+        position: relative;
+        margin-bottom: 100px;
+      }
+    }
+
+    .project-container {
+      padding: 0px;
+
+      .small-bois {
+        grid-template-columns: 1fr;
+
+        img {
+          margin: 20px auto 0px auto;
+        }
+      }
+    }
+
     .bubble-container {
         position: fixed;
         padding: 0px 0px 25px 0px;
@@ -1190,7 +1275,25 @@ body {
     }
 
     .center-container {
-        display: none;
+        //display: block;
+        width: 100%;
+        text-align: center;
+        left: 0%;
+        pointer-events: none;
+
+        .hero-text {
+          color: white;
+          margin: 0px !important;
+
+        }
+
+        h1 {
+          font-size: 28px;
+        }
+
+        p {
+          font-size: 18px;
+        }
     }
 
     .white-container {
@@ -1198,7 +1301,7 @@ body {
     }
 
     .port-container {
-        width: 70%;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
@@ -1206,20 +1309,84 @@ body {
 
     .port-item-container {
         display: block;
-        margin: 0px 0px 20px 0px;
+        //margin: 0px 0px 20px 0px;
         width: 100%;
+        padding: 20px;
+        margin: 0px;
+        border-radius: 0px;
     }
 
     .port-text {
         h1 {
-            font-size: 18px;
+            font-size: 16px;
+        }
+
+        p {
+          font-size: 12px;
         }
     }
 
     .port-img {
-        width: 100%;
-        border-radius: 5px;
-        margin: 0px 0px 0px 0px;
+      //display: none;
+        width: 40px;
+        height: 40px;
+        border-radius: 0px;
+        margin: 0px auto 20px auto;
+    }
+
+    .port-img1 {
+      width: 70px;
+      height: 70px;
+      //margin-bottom: -10px;
+      background-color: rgba(0,0,0,0);
+      background-image: url('../res/portfolio-images/floors/floors-tinycon.png');
+    }
+
+    .port-img2 {
+      background-color: rgba(0,0,0,0);
+      background-image: url('../res/portfolio-images/backpack-barber/bb-logo.png');
+      border-radius: 100%;
+      filter: grayscale(1);
+    }
+
+    .port-img3 {
+      background-color: rgba(0,0,0,0);
+      background-image: url('../res/portfolio-images/spotify/s-logo.png');
+      filter: grayscale(1);
+    }
+
+    .port-img4 {
+      background-color: rgba(0,0,0,0);
+      background-image: url('../res/portfolio-images/material.png');
+      filter: invert(1);
+    }
+
+    .port-img5 {
+      width: 55px;
+      height: 55px;
+      //margin-bottom: -10px;
+      background-color: rgba(0,0,0,0);
+      background-image: url('../res/portfolio-images/music.jpg');
+      filter: invert(1);
+    }
+
+    .port-img6 {
+      background-color: rgba(0,0,0,0);
+      background-image: url('../res/portfolio-images/puzzle.png');
+      filter: invert(1);
+    }
+
+    .port-img7 {
+      background-color: rgba(0,0,0,0);
+      background-image: url('../res/portfolio-images/monday-logo.jpg');
+      filter: grayscale(1);
+      border-radius: 100%;
+    }
+
+    .port-img8 {
+      background-color: rgba(0,0,0,0);
+      background-image: url('../res/portfolio-images/key.png');
+      filter: invert(1);
     }
 }
 

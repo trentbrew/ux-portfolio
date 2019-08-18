@@ -1699,30 +1699,42 @@
                 document.querySelector('.white-container').style.width = '20%';
                 document.querySelector('.center-container').style.opacity = '0';
                 document.querySelector('.center-container').style.transform = 'translateX(1200px)';
-                document.querySelector('.hero-image').style.width = '45px';
-                document.querySelector('.hero-image').style.height = '45px';
+                //document.querySelector('.hero-image').style.width = '45px';
+                //document.querySelector('.hero-image').style.height = '45px';
                 document.querySelector('.wave').style.backgroundPositionY = '180%';
             }
             else {
                 document.querySelector('.white-container').style.width = '80%';
                 document.querySelector('.center-container').style.opacity = '1';
                 document.querySelector('.center-container').style.transform = 'translateX(0px)';
-                document.querySelector('.hero-image').style.width = '300px';
-                document.querySelector('.hero-image').style.height = '300px';
+                //document.querySelector('.hero-image').style.width = '300px';
+                //document.querySelector('.hero-image').style.height = '300px';
                 document.querySelector('.wave').style.backgroundPositionY = '50%';
             }
 
             if(v.sectionIndex == 0) {
-                document.querySelector('.home').style.background = '#88C69D';
+                document.querySelector('.home').style.background = '#346791';
                 //document.querySelector('.home').style.filter = "";
+
+                if(window.innerWidth <= 768) {
+                    document.querySelector('.home').style.background = 'black';
+                }
             }
 
             if(v.sectionIndex == 1) {
                 document.querySelector('.home').style.background = '#346791';
+                
+                if(window.innerWidth <= 768) {
+                    document.querySelector('.home').style.background = 'black';
+                }
             }
 
             if(v.sectionIndex == 2) {
                 document.querySelector('.home').style.background = '#346791';
+
+                if(window.innerWidth <= 768) {
+                    document.querySelector('.home').style.background = 'black';
+                }
             }
 
             if(v.sectionIndex == 3) {

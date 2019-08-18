@@ -20,6 +20,13 @@ $(document).ready(function() {
     const sectionNav = $('.fp-nav');
     const projectHome = $('.project-home');
     const nextProject = $('.next-project');
+    const next1 = $('.next1');
+    const next2 = $('.next2');
+    const next3 = $('.next3');
+    const next4 = $('.next4');
+    const next5 = $('.next5');
+    const next6 = $('.next6');
+    const next7 = $('.next7');
 
     const item1 = $('.item1');
     const item2 = $('.item2');
@@ -170,6 +177,337 @@ $(document).ready(function() {
         }, 1000); 
     });
 
+    next1.click(function() {
+        pageContainer.css({
+            marginTop: '180px',
+            opacity: 0
+        });
+
+        nextProject.css({
+            opacity: 0
+        });
+
+        studyBackdrop.css({
+            //height: '0px',
+            opacity: 0
+        });
+
+        projectContainer.css({
+            marginTop: '40px',
+            opacity: 0
+        });
+
+        projectHeader.css({
+            marginTop: '40px',
+            opacity: 0
+        });
+
+        download.css({
+            opacity: 0,
+            marginTop: '40px'
+        });
+        
+        back.css({
+            opacity: 0,
+            //marginTop: '40px'
+        });
+
+        social.css({
+            opacity: 0,
+            //marginTop: '40px'
+        });
+
+        $('body').css('background-color','#e0e0e0');
+
+        setTimeout(function() {
+            window.open('drummerboi.html',"_self");
+        }, 1000); 
+    });
+
+    next2.click(function() {
+        pageContainer.css({
+            marginTop: '180px',
+            opacity: 0
+        });
+
+        nextProject.css({
+            opacity: 0
+        });
+
+        studyBackdrop.css({
+            //height: '0px',
+            opacity: 0
+        });
+
+        projectContainer.css({
+            marginTop: '40px',
+            opacity: 0
+        });
+
+        projectHeader.css({
+            marginTop: '40px',
+            opacity: 0
+        });
+
+        download.css({
+            opacity: 0,
+            marginTop: '40px'
+        });
+        
+        back.css({
+            opacity: 0,
+            //marginTop: '40px'
+        });
+
+        social.css({
+            opacity: 0,
+            //marginTop: '40px'
+        });
+
+        $('body').css('background-color','#e0e0e0');
+
+        setTimeout(function() {
+            window.open('spotify.html',"_self");
+        }, 1000); 
+    });
+
+    next3.click(function() {
+        pageContainer.css({
+            marginTop: '180px',
+            opacity: 0
+        });
+
+        nextProject.css({
+            opacity: 0
+        });
+
+        studyBackdrop.css({
+            //height: '0px',
+            opacity: 0
+        });
+
+        projectContainer.css({
+            marginTop: '40px',
+            opacity: 0
+        });
+
+        projectHeader.css({
+            marginTop: '40px',
+            opacity: 0
+        });
+
+        download.css({
+            opacity: 0,
+            marginTop: '40px'
+        });
+        
+        back.css({
+            opacity: 0,
+            //marginTop: '40px'
+        });
+
+        social.css({
+            opacity: 0,
+            //marginTop: '40px'
+        });
+
+        $('body').css('background-color','#e0e0e0');
+
+        setTimeout(function() {
+            window.open('material-study.html',"_self");
+        }, 1000); 
+    });
+
+    next4.click(function() {
+        pageContainer.css({
+            marginTop: '180px',
+            opacity: 0
+        });
+
+        nextProject.css({
+            opacity: 0
+        });
+
+        studyBackdrop.css({
+            //height: '0px',
+            opacity: 0
+        });
+
+        projectContainer.css({
+            marginTop: '40px',
+            opacity: 0
+        });
+
+        projectHeader.css({
+            marginTop: '40px',
+            opacity: 0
+        });
+
+        download.css({
+            opacity: 0,
+            marginTop: '40px'
+        });
+        
+        back.css({
+            opacity: 0,
+            //marginTop: '40px'
+        });
+
+        social.css({
+            opacity: 0,
+            //marginTop: '40px'
+        });
+
+        $('body').css('background-color','#e0e0e0');
+
+        setTimeout(function() {
+            window.open('backpack-barber.html',"_self");
+        }, 1000); 
+    });
+
+    next5.click(function() {
+        pageContainer.css({
+            marginTop: '180px',
+            opacity: 0
+        });
+
+        nextProject.css({
+            opacity: 0
+        });
+
+        studyBackdrop.css({
+            //height: '0px',
+            opacity: 0
+        });
+
+        projectContainer.css({
+            marginTop: '40px',
+            opacity: 0
+        });
+
+        projectHeader.css({
+            marginTop: '40px',
+            opacity: 0
+        });
+
+        download.css({
+            opacity: 0,
+            marginTop: '40px'
+        });
+        
+        back.css({
+            opacity: 0,
+            //marginTop: '40px'
+        });
+
+        social.css({
+            opacity: 0,
+            //marginTop: '40px'
+        });
+
+        $('body').css('background-color','#e0e0e0');
+
+        setTimeout(function() {
+            window.open('jquery-puzzle.html',"_self");
+        }, 1000); 
+    });
+
+    next6.click(function() {
+        pageContainer.css({
+            marginTop: '180px',
+            opacity: 0
+        });
+
+        nextProject.css({
+            opacity: 0
+        });
+
+        studyBackdrop.css({
+            //height: '0px',
+            opacity: 0
+        });
+
+        projectContainer.css({
+            marginTop: '40px',
+            opacity: 0
+        });
+
+        projectHeader.css({
+            marginTop: '40px',
+            opacity: 0
+        });
+
+        download.css({
+            opacity: 0,
+            marginTop: '40px'
+        });
+        
+        back.css({
+            opacity: 0,
+            //marginTop: '40px'
+        });
+
+        social.css({
+            opacity: 0,
+            //marginTop: '40px'
+        });
+
+        $('body').css('background-color','#e0e0e0');
+
+        setTimeout(function() {
+            window.open('monday-report.html',"_self");
+        }, 1000); 
+    });
+
+    next7.click(function() {
+        pageContainer.css({
+            marginTop: '180px',
+            opacity: 0
+        });
+
+        nextProject.css({
+            opacity: 0
+        });
+
+        studyBackdrop.css({
+            //height: '0px',
+            opacity: 0
+        });
+
+        projectContainer.css({
+            marginTop: '40px',
+            opacity: 0
+        });
+
+        projectHeader.css({
+            marginTop: '40px',
+            opacity: 0
+        });
+
+        download.css({
+            opacity: 0,
+            marginTop: '40px'
+        });
+        
+        back.css({
+            opacity: 0,
+            //marginTop: '40px'
+        });
+
+        social.css({
+            opacity: 0,
+            //marginTop: '40px'
+        });
+
+        $('body').css('background-color','#e0e0e0');
+
+        setTimeout(function() {
+            window.open('quickkeys.html',"_self");
+        }, 1000); 
+    });
+
+
+
     whiteContainer.css({
         width: '80%'
     });
@@ -188,7 +526,7 @@ $(document).ready(function() {
     });
 
     setTimeout(function() {
-        heroImg.css({
+        $('.hero-text').css({
             opacity: 1,
             marginLeft: '80px',
             marginRight: '50px'
@@ -251,6 +589,20 @@ $(document).ready(function() {
         scrollingSpeed: 1000
     });
 
+        //----------for mobile----------
+
+        if(window.innerWidth <= 768) {
+            console.log('currently on mobile');
+    
+            //fullpage_api.setAutoScrolling(false);
+        }
+    
+    
+    
+    
+    
+        //----------end of mobile scripts----------
+
     portfolioLink.click(function() {
         fullpage_api.setAutoScrolling(true);
 
@@ -293,6 +645,22 @@ $(document).ready(function() {
     });
 
     back.click(function() {
+
+        if(window.innerWidth <=768) {
+            $('body').css('background-color','black');
+
+            setTimeout(function() {
+                window.open('index.html', '_self');
+            }, 1000);
+        }
+        else {
+            $('body').css('background-color','white');
+
+            setTimeout(function() {
+                window.open('index.html', '_self');
+            }, 1000);
+        }
+
         pageContainer.css({
             marginTop: '180px',
             opacity: 0
@@ -331,15 +699,24 @@ $(document).ready(function() {
             opacity: 0,
             marginTop: '40px'
         });
-
-        $('body').css('background-color','white');
-
-        setTimeout(function() {
-            window.open('index.html', '_self');
-        }, 1000);
     });
     
     back2.click(function() {
+        if(window.innerWidth <=768) {
+            $('body').css('background-color','black');
+
+            setTimeout(function() {
+                window.open('index.html', '_self');
+            }, 1000);
+        }
+        else {
+            $('body').css('background-color','white');
+
+            setTimeout(function() {
+                window.open('index.html', '_self');
+            }, 1000);
+        }
+
         pageContainer.css({
             marginTop: '180px',
             opacity: 0
@@ -373,12 +750,6 @@ $(document).ready(function() {
             opacity: 0,
             marginTop: '40px'
         });
-
-        $('body').css('background-color','white');
-
-        setTimeout(function() {
-            window.open('index.html', '_self');
-        }, 1000);
     });
 
     contactLink.click(function() {
