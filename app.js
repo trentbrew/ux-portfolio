@@ -5,14 +5,21 @@ $(document).ready(function() {
     const heroText = $('.hero-text');
     const whiteContainer = $('.white-container');
     const pageContainer = $('.page-container');
-    const studyContainer = $('.study-container');
+    const projectContainer = $('.project-container');
+    const projectHeader = $('.study-banner');
     const download = $('.download');
     const back = $('.back');
+    const back2 = $('.back2');
     const portfolioLink = $('.portfolio');
     const resumeLink = $('.resume');
     const contactLink = $('.contact');
     const nav = $('.nav');
     const social = $('.social-bubble');
+    const studyBackdrop = $('.study-backdrop');
+    const wave = $('.wave');
+    const sectionNav = $('.fp-nav');
+    const projectHome = $('.project-home');
+    const nextProject = $('.next-project');
 
     const item1 = $('.item1');
     const item2 = $('.item2');
@@ -25,97 +32,141 @@ $(document).ready(function() {
 
     item1.click(function() {
         $('.next-page-cover').css({
-            backgroundColor: '#88A8C6',
+            backgroundColor: '#e0e0e0',
             height: '100%',
         });
 
+        /*whiteContainer.css({
+            width: '100%',
+            //background: '#e0e0e0'
+        });*/
+
+        /*wave.css({
+            backgroundPositionY: '50%',
+            //background: '#e0e0e0'
+        });*/
+
+        /*sectionNav.css({
+            opacity: 0
+        });
+                
+        nav.css({
+            opacity: 0
+        });
+
+        social.css({
+            opacity: 0
+        });*/
+
+        /*setTimeout(function() {
+            $('.next-page-cover').css({
+                backgroundColor: '#3d70a6',
+                height: '100%',
+            });
+        }, 1000);*/ 
+
         setTimeout(function() {
-            console.log('open resume link');
             window.open('floors.html',"_self");
         }, 1000); 
     });
 
     item2.click(function() {
         $('.next-page-cover').css({
-            backgroundColor: '#C0D7D6',
+            backgroundColor: '#e0e0e0',
             height: '100%',
         });
 
+        /*whiteContainer.css({
+            width: '100%',
+            //background: '#e0e0e0'
+        });
+
+        wave.css({
+            backgroundPositionY: '50%',
+            //background: '#e0e0e0'
+        });
+
+        
+        nav.css({
+            opacity: 0
+        });
+
+        social.css({
+            opacity: 0
+        });*/
+
         setTimeout(function() {
-            console.log('open resume link');
-            window.open('floors.html',"_self");
+            window.open('drummerboi.html',"_self");
         }, 1000); 
     });
 
     item3.click(function() {
         $('.next-page-cover').css({
-            backgroundColor: '#16B246',
+            backgroundColor: '#e0e0e0',
             height: '100%',
         });
 
         setTimeout(function() {
-            console.log('open resume link');
-            window.open('floors.html',"_self");
+            window.open('spotify.html',"_self");
         }, 1000); 
     });
 
     item4.click(function() {
         $('.next-page-cover').css({
-            backgroundColor: '#2B98EC',
+            backgroundColor: '#e0e0e0',
             height: '100%',
         });
 
         setTimeout(function() {
-            console.log('open resume link');
-            window.open('floors.html',"_self");
+            window.open('material-study.html',"_self");
         }, 1000); 
     });
 
     item5.click(function() {
         $('.next-page-cover').css({
-            backgroundColor: '#FB8C6A',
+            backgroundColor: '#e0e0e0',
             height: '100%',
         });
 
         setTimeout(function() {
             console.log('open resume link');
-            window.open('floors.html',"_self");
+            window.open('backpack-barber.html',"_self");
         }, 1000); 
     });
 
     item6.click(function() {
         $('.next-page-cover').css({
-            backgroundColor: '#7C7C7C',
+            backgroundColor: '#e0e0e0',
             height: '100%',
         });
 
         setTimeout(function() {
             console.log('open resume link');
-            window.open('floors.html',"_self");
+            window.open('jquery-puzzle.html',"_self");
         }, 1000); 
     });
 
     item7.click(function() {
         $('.next-page-cover').css({
-            backgroundColor: '#FDB044',
+            backgroundColor: '#e0e0e0',
             height: '100%',
         });
 
         setTimeout(function() {
             console.log('open resume link');
-            window.open('floors.html',"_self");
+            window.open('monday-report.html',"_self");
         }, 1000); 
     });
 
     item8.click(function() {
         $('.next-page-cover').css({
-            backgroundColor: '#594FCC',
+            backgroundColor: '#e0e0e0',
             height: '100%',
         });
 
         setTimeout(function() {
             console.log('open resume link');
-            window.open('floors.html',"_self");
+            window.open('quickkeys.html',"_self");
         }, 1000); 
     });
 
@@ -123,11 +174,34 @@ $(document).ready(function() {
         width: '80%'
     });
 
+    studyBackdrop.css({
+        height: '70vh'
+    });
+
+    back2.css({
+        opacity: 1,
+        marginTop: '0px'
+    });
+
+    projectHome.css({
+        background: '#e0e0e0'
+    });
+
     setTimeout(function() {
         heroImg.css({
             opacity: 1,
             marginLeft: '80px',
             marginRight: '50px'
+        });
+
+        projectHeader.css({
+            marginTop: '0px',
+            opacity: 1
+        });
+
+        pageContainer.css({
+            marginTop: '140px',
+            opacity: 1
         });
     
     }, 500);
@@ -145,34 +219,36 @@ $(document).ready(function() {
         social.css({
             opacity: 1
         });
+
+        back.css({
+            opacity: 0.8,
+            marginTop: '0px'
+        });
+
+        projectContainer.css({
+            marginTop: '40px',
+            opacity: 1
+        });
+
+        download.css({
+            opacity: 1,
+            marginTop: '0px'
+        });
     
     }, 1000);
+
+    setTimeout(function() {
+        console.log('open backdrop');
+        /*studyBackdrop.css({
+            'height':'70vh'
+        });*/
+    }, 2000);
 
     new fullpage('#fullPage', {
         autoScrolling: true,
         navigation: true,
         navigationPosition: 'left',
         scrollingSpeed: 1000
-    });
-
-    pageContainer.css({
-        marginTop: '140px',
-        opacity: 1
-    });
-
-    studyContainer.css({
-        marginTop: '0px',
-        opacity: 1
-    });
-
-    download.css({
-        opacity: 1,
-        marginTop: '0px'
-    });
-    
-    back.css({
-        opacity: 1,
-        marginTop: '0px'
     });
 
     portfolioLink.click(function() {
@@ -194,6 +270,22 @@ $(document).ready(function() {
             height: '100%',
         });
 
+        /*whiteContainer.css({
+            width: '100%'
+        });
+
+        nav.css({
+            opacity: 0
+        });
+
+        social.css({
+            opacity: 0
+        });*/
+
+        wave.css({
+            //backgroundPositionY: '50%'
+        });
+
         setTimeout(function() {
             console.log('open resume link');
             window.open('resume.html',"_self");
@@ -202,23 +294,84 @@ $(document).ready(function() {
 
     back.click(function() {
         pageContainer.css({
-            marginTop: '100vh',
+            marginTop: '180px',
             opacity: 0
         });
 
-        studyContainer.css({
-            marginTop: '100vh',
+        nextProject.css({
+            opacity: 0
+        });
+
+        studyBackdrop.css({
+            //height: '0px',
+            opacity: 0
+        });
+
+        projectContainer.css({
+            marginTop: '40px',
+            opacity: 0
+        });
+
+        projectHeader.css({
+            marginTop: '40px',
             opacity: 0
         });
 
         download.css({
             opacity: 0,
-            marginTop: '50px'
+            marginTop: '40px'
         });
         
         back.css({
             opacity: 0,
-            marginTop: '50px'
+            marginTop: '40px'
+        });
+
+        social.css({
+            opacity: 0,
+            marginTop: '40px'
+        });
+
+        $('body').css('background-color','white');
+
+        setTimeout(function() {
+            window.open('index.html', '_self');
+        }, 1000);
+    });
+    
+    back2.click(function() {
+        pageContainer.css({
+            marginTop: '180px',
+            opacity: 0
+        });
+
+        studyBackdrop.css({
+            height: '0px'
+        });
+
+        projectContainer.css({
+            marginTop: '40px',
+            opacity: 0
+        });
+
+        projectHeader.css({
+            marginTop: '40px',
+            opacity: 0
+        });
+
+        download.css({
+            opacity: 0,
+            marginTop: '40px'
+        });
+        
+        back2.css({
+            opacity: 0,
+            marginTop: '40px'
+        });
+
+        social.css({
+            opacity: 0,
+            marginTop: '40px'
         });
 
         $('body').css('background-color','white');

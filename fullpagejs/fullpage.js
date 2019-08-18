@@ -1713,17 +1713,21 @@
             }
 
             if(v.sectionIndex == 0) {
-
+                document.querySelector('.home').style.background = '#88C69D';
+                //document.querySelector('.home').style.filter = "";
             }
 
             if(v.sectionIndex == 1) {
-
+                document.querySelector('.home').style.background = '#346791';
             }
 
             if(v.sectionIndex == 2) {
+                document.querySelector('.home').style.background = '#346791';
             }
 
             if(v.sectionIndex == 3) {
+                document.querySelector('.home').style.background = '#8f618b';
+
                 console.log('mark contact');
 
                 ind1.style.width = '0%';
