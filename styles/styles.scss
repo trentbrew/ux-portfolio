@@ -1157,6 +1157,11 @@ body {
     //margin-right: 100px;
     transition: 2s;
     //filter: invert(1);
+    //opacity: 1;
+
+    span {
+      //transform: translateX(-150px);
+    }
   }
 
 @media only screen and (max-width: 768px) {
@@ -1210,6 +1215,7 @@ body {
         top: 50% !important;
         transform: scale(0.8) !important;
         display: none;
+        //opacity: 0;
     }
 
     #fp-nav li {
@@ -1330,6 +1336,7 @@ body {
         transition: 1s;
         height: 60px;
         z-index: -1 !important;
+        height: 0%;
     }
 
     .port-container {

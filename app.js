@@ -17,7 +17,7 @@ $(document).ready(function() {
     const social = $('.social-bubble');
     const studyBackdrop = $('.study-backdrop');
     const wave = $('.wave');
-    const sectionNav = $('.fp-left');
+    const sectionNav = $('#fp-nav span');
     const projectHome = $('.project-home');
     const nextProject = $('.next-project');
     const next1 = $('.next1');
@@ -523,6 +523,12 @@ $(document).ready(function() {
         background: '#e0e0e0'
     });
 
+    if(window.innerWidth <= 768) {
+        whiteContainer.css({
+            height: '60px'
+        });
+    }
+
     setTimeout(function() {
         $('.hero-text').css({
             opacity: 1,
@@ -538,6 +544,10 @@ $(document).ready(function() {
         pageContainer.css({
             marginTop: '140px',
             opacity: 1
+        });
+
+        sectionNav.css({
+            //'transform':'translateX(150px)'
         });
     
     }, 500);

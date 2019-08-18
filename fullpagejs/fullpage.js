@@ -99,6 +99,12 @@
         var $html = $('html')[0];
         var $body = $('body')[0];
 
+        //document.querySelector('.fp-left').style.opacity = '0';
+
+        setTimeout(function() {
+            document.querySelector('.fp-left').style.opacity = '1';
+        }, 1000);
+
         //only once my friend!
         if(hasClass($html, ENABLED)){ displayWarnings(); return; }
 

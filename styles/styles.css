@@ -1275,6 +1275,7 @@ a {
     transition: 1s;
     height: 60px;
     z-index: -1 !important;
+    height: 0%;
   }
   .port-container {
     width: 100%;
