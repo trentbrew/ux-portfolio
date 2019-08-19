@@ -151,8 +151,8 @@ body {
 @-webkit-keyframes draw {
   from {
     opacity: 0;
-    -webkit-transform: translateY(-30px);
-            transform: translateY(-30px);
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
   }
   to {
     opacity: 1;
@@ -165,8 +165,8 @@ body {
 @keyframes draw {
   from {
     opacity: 0;
-    -webkit-transform: translateY(-30px);
-            transform: translateY(-30px);
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
   }
   to {
     opacity: 1;
@@ -317,6 +317,11 @@ a {
   -webkit-transition: 1s;
   transition: 1s;
   z-index: 999;
+}
+
+.next-page-cover h3 {
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .hero-image {

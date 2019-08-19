@@ -45,10 +45,34 @@ $(document).ready(function() {
 
     console.log(greetings);
 
+    var dunGots = false;
+
+    /*if(window.innerWidth > 768) {
+        item1.hover(function() {
+            $('.next-page-cover').css({
+                'transition':'300ms',
+                backgroundColor: '#3d70a6',
+                height: '40px',
+            });
+        }, function() {
+            if(!dunGots) {
+                $('.next-page-cover').css({
+                    height: '0px',
+                });
+            }
+        });
+    }*/
+
     item1.click(function() {
+        dunGots = true;
         $('.next-page-cover').css({
+            'transition': '1s',
             backgroundColor: '#e0e0e0',
             height: '100%',
+        });
+
+        $('.next-page-cover h3').css({
+            'opacity':'0'
         });
 
         /*whiteContainer.css({
@@ -675,6 +699,10 @@ $(document).ready(function() {
         }
         else {
             $('body').css('background-color','#121212');
+
+            studyBackdrop.css({
+                height: '100vh'
+            });
 
             setTimeout(function() {
                 window.open('index.html', '_self');
