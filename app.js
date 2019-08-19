@@ -564,8 +564,8 @@ $(document).ready(function() {
     setTimeout(function() {
         $('.hero-text').css({
             opacity: 1,
-            marginLeft: '80px',
-            marginRight: '50px'
+            //marginLeft: '80px',
+            //marginRight: '50px'
         });
 
         projectHeader.css({
@@ -588,6 +588,11 @@ $(document).ready(function() {
         heroText.css({
             opacity: 1,
             //marginLeft: '80px'
+        });
+
+        heroImg.css({
+            opacity: 1,
+            //marginLeft: '-80px'
         });
 
         nav.css({
