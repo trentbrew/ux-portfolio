@@ -1712,7 +1712,8 @@
                     document.querySelector('.white-container').style.opacity = '0';
                 }
                 else {
-                    document.querySelector('.center-container').style.transform = 'translateX(1200px)';
+                    document.querySelector('.center-container').style.transform = 'translateX(1000px)';
+                    document.querySelector('.center-container').style.opacity = '0';
                 }
 
                 //document.querySelector('.hero-image').style.width = '45px';

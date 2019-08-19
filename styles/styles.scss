@@ -44,6 +44,133 @@ body {
     height: 200px;
 }
 
+#greetings {
+  animation: fill 0.5s ease forwards;
+  height: 100px;
+  path {
+    //margin: 20px;
+    opacity: 0;
+  }
+}
+
+#greetings path:nth-child(1) {
+  stroke-dasharray: 155;
+  //stroke-dashoffset: 155;
+  animation: draw 1s ease forwards;
+}
+
+#greetings path:nth-child(2) {
+  stroke-dasharray: 68;
+  //stroke-dashoffset: 68;
+  animation: draw 1s ease forwards 0.2s;
+}
+
+#greetings path:nth-child(3) {
+  stroke-dasharray: 32;
+  //stroke-dashoffset: 32;
+  animation: draw 1s ease forwards 0.4s;
+}
+
+#greetings path:nth-child(4) {
+  stroke-dasharray: 164;
+  //stroke-dashoffset: 164;
+  animation: draw 1s ease forwards 0.6s;
+}
+
+#greetings path:nth-child(5) {
+  stroke-dasharray: 103;
+  //stroke-dashoffset: 103;
+  animation: draw 1s ease forwards 0.8s;
+}
+
+#greetings path:nth-child(6) {
+  stroke-dasharray: 108;
+  //stroke-dashoffset: 108;
+  animation: draw 1s ease forwards 1.0s;
+}
+
+#greetings path:nth-child(7) {
+  stroke-dasharray: 119;
+  //stroke-dashoffset: 119;
+  animation: draw 1s ease forwards 1.2s;
+}
+
+#greetings path:nth-child(8) {
+  stroke-dasharray: 164;
+  //stroke-dashoffset: 164;
+  animation: draw 1s ease forwards 1.4s;
+}
+
+#greetings path:nth-child(9) {
+  stroke-dasharray: 118;
+  //stroke-dashoffset: 118;
+  animation: draw 1s ease forwards 1.6s;
+}
+
+#greetings path:nth-child(10) {
+  stroke-dasharray: 32;
+  //stroke-dashoffset: 32;
+  animation: draw 1s ease forwards 1.8s;
+}
+
+#greetings path:nth-child(11) {
+  stroke-dasharray: 106;
+  //stroke-dashoffset: 106;
+  animation: draw 1s ease forwards 2s;
+}
+
+#greetings path:nth-child(12) {
+  stroke-dasharray: 106;
+  //stroke-dashoffset: 106;
+  animation: draw 1s ease forwards 2.2s;
+}
+
+#greetings path:nth-child(13) {
+  stroke-dasharray: 68;
+  //stroke-dashoffset: 68;
+  animation: draw 1s ease forwards 2.4s;
+}
+
+#greetings path:nth-child(14) {
+  stroke-dasharray: 118;
+  //stroke-dashoffset: 118;
+  animation: draw 1s ease forwards 2.6s;
+}
+
+#greetings path:nth-child(15) {
+  stroke-dasharray: 108;
+  //stroke-dashoffset: 108;
+  animation: draw 1s ease forwards 2.8s;
+}
+
+#greetings path:nth-child(16) {
+  stroke-dasharray: 87;
+  //stroke-dashoffset: 87;
+  animation: draw 1s ease forwards 3.0s;
+}
+
+@keyframes draw {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    margin: 0px;
+    transform: translateY(0px);
+    //stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill {
+  from {
+    fill: #121212;
+  }
+  to {
+    fill: white;
+  }
+}
+
 .white-container {
     height: 100vh;
     width: 100%;
@@ -230,6 +357,7 @@ body {
       p {
           font-size: 22px;
           opacity: 0.6;
+          margin-top:-30px;
       }
   }
 
@@ -1170,6 +1298,10 @@ body {
         width: 100% !important;
         height: 30vh;
         top: 0px;
+    }
+
+    .hero-text {
+      transform: scale(0.8);
     }
 
     .bubbles-res {

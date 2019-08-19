@@ -37,6 +37,14 @@ $(document).ready(function() {
     const item7 = $('.item7');
     const item8 = $('.item8');
 
+    const greetings = document.querySelectorAll('#greetings path');
+
+    for(let i = 0; i < greetings.length; i++) {
+        console.log('letter ' + i + ' is ' + greetings[i].getTotalLength());
+    }
+
+    console.log(greetings);
+
     item1.click(function() {
         $('.next-page-cover').css({
             backgroundColor: '#e0e0e0',
