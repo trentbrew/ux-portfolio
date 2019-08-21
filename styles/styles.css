@@ -178,7 +178,7 @@ body {
 
 @-webkit-keyframes fill {
   from {
-    fill: #121212;
+    fill: #181818;
   }
   to {
     fill: white;
@@ -187,7 +187,7 @@ body {
 
 @keyframes fill {
   from {
-    fill: #121212;
+    fill: #181818;
   }
   to {
     fill: white;
@@ -199,7 +199,7 @@ body {
   width: 100%;
   position: fixed;
   right: 0px;
-  background: #121212;
+  background: #181818;
   z-index: 1;
   -webkit-transition: 2s;
   transition: 2s;
@@ -372,10 +372,6 @@ a {
   font-size: 22px;
   opacity: 0.6;
   margin-top: -30px;
-}
-
-body {
-  background-color: #1abc9c;
 }
 
 .arrows {
@@ -575,7 +571,7 @@ body {
 }
 
 .port-item-container:hover {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
 
@@ -715,11 +711,11 @@ body {
 }
 
 .port-text a:hover {
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .port-contact:hover {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 0.2);
 }
 
 @-webkit-keyframes wave {
@@ -1396,7 +1392,7 @@ body {
     display: none;
   }
   .home {
-    background: #121212;
+    background: #181818;
   }
   .home .nav {
     -webkit-filter: invert(1);

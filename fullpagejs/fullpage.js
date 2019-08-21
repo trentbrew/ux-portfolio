@@ -1744,7 +1744,7 @@
                 //document.querySelector('.home').style.filter = "";
 
                 if(window.innerWidth <= 768) {
-                    document.querySelector('.home').style.background = '#121212';
+                    document.querySelector('.home').style.background = '#181818';
                 }
             }
 

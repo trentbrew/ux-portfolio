@@ -164,7 +164,7 @@ body {
 
 @keyframes fill {
   from {
-    fill: #121212;
+    fill: #181818;
   }
   to {
     fill: white;
@@ -176,7 +176,7 @@ body {
     width: 100%;
     position: fixed;
     right: 0px;
-    background: rgb(18,18,18);
+    background: #181818;
     z-index: 1;
     transition: 2s;
     display: flex;
@@ -369,7 +369,7 @@ body {
   //----------arrow stuff----------
 
   body {
-    background-color: #1abc9c;
+    //background-color: #1abc9c;
   }
   
   .arrows {
@@ -533,7 +533,7 @@ body {
       transition: background 300ms, margin-top 1s;
 
       &:hover {
-          background: rgba(white, 0.2);
+          background: rgba(black, 0.2);
           cursor: pointer;
       }
   }
@@ -674,13 +674,13 @@ body {
       transition: 300ms;
 
       &:hover {
-          background: rgba(white, 0.4);
+          background: rgba(black, 0.4);
       }
   }
 
   .port-contact {
       &:hover {
-          background: rgba(white, 0.2);
+          background: rgba(black, 0.2);
       }
   }
 
@@ -1391,7 +1391,7 @@ body {
     }
 
     .home {
-      background: #121212;
+      background: #181818;
 
       .nav {
         filter: invert(1);

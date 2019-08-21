@@ -696,14 +696,14 @@ $(document).ready(function() {
     back.click(function() {
 
         if(window.innerWidth <=768) {
-            $('body').css('background-color','#121212');
+            $('body').css('background-color','#181818');
 
             setTimeout(function() {
                 window.open('index.html', '_self');
             }, 1000);
         }
         else {
-            $('body').css('background-color','#121212');
+            $('body').css('background-color','#181818');
 
             studyBackdrop.css({
                 height: '100vh'
@@ -756,14 +756,14 @@ $(document).ready(function() {
     
     back2.click(function() {
         if(window.innerWidth <=768) {
-            $('body').css('background-color','#121212');
+            $('body').css('background-color','#181818');
 
             setTimeout(function() {
                 window.open('index.html', '_self');
             }, 1000);
         }
         else {
-            $('body').css('background-color','#121212');
+            $('body').css('background-color','#181818');
 
             setTimeout(function() {
                 window.open('index.html', '_self');
