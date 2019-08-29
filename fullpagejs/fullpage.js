@@ -1768,7 +1768,7 @@
                 }
             }
 
-            if(v.sectionIndex == 3) {
+            if(v.sectionIndex == 4) {
                 //document.querySelector('.home').style.background = '#8f618b';
 
                 console.log('mark contact');
@@ -1778,7 +1778,7 @@
                 ind3.style.width = '50%';
             }
 
-            if(v.sectionIndex < 3) {
+            if(v.sectionIndex < 4) {
 
                 ind1.style.width = '50%';
                 ind2.style.width = '0%';
