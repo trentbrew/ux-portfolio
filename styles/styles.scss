@@ -12,7 +12,11 @@ body {
 
 .home {
     transition: 1.5s;
-    background: #346791;
+    background: #e0e0e0;
+    //background-image: url('../res/background-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .fullPage {
@@ -181,7 +185,16 @@ body {
     transition: 2s;
     display: flex;
     align-items: center;
+    //filter: blur(10px);
     pointer-events: none;
+}
+
+.white-container {
+  content: '';
+  background-image: url('../res/background-3.jpg');
+  background-position: center;
+  //filter: brightness(0.8);
+  background-size: cover;
 }
 
 .bubble-container {
@@ -275,6 +288,18 @@ body {
 
 .sec2 {
     //background: linear-gradient(#88A8C6, #CEACD5);
+    font-size: 18px;
+    margin-left: 300px;
+
+    .ohai-image {
+      background-image: url('../res/ohai.gif');
+      background-position: -220px -180px;
+      background-repeat: no-repeat;
+      width: 300px;
+      height: 140px;
+      margin-bottom: 40px;
+      filter: brightness(0.88);
+    }
 }
 
 .sec3 {
@@ -293,12 +318,15 @@ body {
     //animation: wave 8s linear infinite;
     pointer-events: none;
     z-index: 2;
-    margin-left: -130px;
+    //filter: brightness(1);
+    //margin-left: -130px;
     pointer-events: none;
-    background-position-y: 50%;
+    background-position-y: 180%;
     transition: 1s;
-    mix-blend-mode: darken;
+    //mix-blend-mode: darken;
+    transform: rotate(180deg);
     //filter: invert(1);
+    //box-shadow: 0px 0px 70px 0px rgba(#e0e0e0,1);
 }
 
   .next-page-cover {
@@ -518,7 +546,13 @@ body {
     width: fit-content;
   }
 
+  .section-text {
+    width: 650px;
+    font-size: 22px;
+  }
+
   .port-item-container {
+      //opacity: 0.7;
       display: flex;
       align-items: center;
       //background: black;
@@ -539,26 +573,26 @@ body {
   }
 
   .port-img {
-    background: white;
+    background: black;
     //opacity: 0.3;
     margin-right: 40px;
     width: 250px;
     height: 125px;
     border-radius: 10px;
-    //box-shadow: 0px 7px 17px -1px rgba(0,0,0,0.2);
+    box-shadow: 0px 7px 17px -1px rgba(0,0,0,0.2);
   }
 
   .port-text {
-      color: white;
+      color: black;
       opacity: 1;
 
       h1 {
-          color: white;
+          //color: black;
           opacity: 0.9;
       }
 
       p {
-          color: white;
+          //color: white;
           opacity: 0.8;
       }
   }
@@ -623,7 +657,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    filter: invert(1);
+    //filter: invert(1);
     width: 60px;
     height: 60px;
     box-shadow: 0 0 0 0 rgba(0,0,0,0);
@@ -635,7 +669,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    filter: invert(1);
+    //filter: invert(1);
     width: 60px;
     height: 60px;
     box-shadow: 0 0 0 0 rgba(0,0,0,0);
@@ -647,7 +681,7 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    filter: invert(1);
+    //filter: invert(1);
     width: 60px;
     height: 60px;
     box-shadow: 0 0 0 0 rgba(0,0,0,0);
@@ -669,12 +703,13 @@ body {
   }
 
   .port-text a {
+      color: black;
       padding: 0px 4px 0px 4px;
       border-radius: 5px;
       transition: 300ms;
 
       &:hover {
-          background: rgba(black, 0.4);
+          background: rgba(black, 0.2);
       }
   }
 
@@ -1364,6 +1399,7 @@ body {
         width: 100% !important;
         height: 30vh;
         top: 0px;
+        background: #e0e0e0 !important;
     }
 
     .hero-text {
@@ -1392,9 +1428,14 @@ body {
 
     .home {
       background: #181818;
+      background-image: url('../res/background-3.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
 
       .nav {
-        filter: invert(1);
+        filter: invert(0);
+        background: none;
       }
 
       .nav-active {
@@ -1434,6 +1475,7 @@ body {
         margin-left: auto;
         margin-right: auto;
         //color: white;
+        filter: invert(1);
     }
 
     .nav li {
@@ -1494,7 +1536,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        filter: invert(1);
+        filter: invert(0) !important;
         height: fit-content;
         margin: 0px;
     }
@@ -1550,7 +1592,7 @@ body {
         display: block;
         //margin: 0px 0px 20px 0px;
         width: 100%;
-        padding: 20px;
+        padding: 20px 0px 0px 0px;
         margin: 0px;
         border-radius: 0px;
     }
@@ -1565,12 +1607,20 @@ body {
         }
     }
 
+    .ohai-image {
+      width: 100px;
+      height: 100px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
     .port-img {
       //display: none;
         width: 40px;
         height: 40px;
         border-radius: 0px;
         margin: 0px auto 20px auto;
+        box-shadow: none;
     }
 
     .port-img1 {
@@ -1579,6 +1629,7 @@ body {
       //margin-bottom: -10px;
       background-color: rgba(0,0,0,0);
       background-image: url('../res/portfolio-images/floors/floors-tinycon.png');
+      filter: invert(1);
     }
 
     .port-img2 {
@@ -1586,18 +1637,19 @@ body {
       background-image: url('../res/portfolio-images/backpack-barber/bb-small.png');
       width: 60px;
       height: 60px;
+      filter: invert(1);
     }
 
     .port-img3 {
       background-color: rgba(0,0,0,0);
       background-image: url('../res/portfolio-images/spotify/s-logo.png');
-      filter: brightness(0) invert(1);
+      filter: brightness(0);
     }
 
     .port-img4 {
       background-color: rgba(0,0,0,0);
       background-image: url('../res/portfolio-images/material.png');
-      filter: invert(1);
+      //filter: invert(1);
     }
 
     .port-img5 {
@@ -1606,26 +1658,26 @@ body {
       //margin-bottom: -10px;
       background-color: rgba(0,0,0,0);
       background-image: url('../res/portfolio-images/music.jpg');
-      filter: invert(1);
+      //filter: invert(1);
     }
 
     .port-img6 {
       background-color: rgba(0,0,0,0);
       background-image: url('../res/portfolio-images/puzzle.png');
-      filter: invert(1);
+      //filter: invert(1);
     }
 
     .port-img7 {
       background-color: rgba(0,0,0,0);
       background-image: url('../res/portfolio-images/monday/monday-logo-2.png');
-      filter: brightness(0) invert(1);
+      filter: brightness(0);
       border-radius: 100%;
     }
 
     .port-img8 {
       background-color: rgba(0,0,0,0);
       background-image: url('../res/portfolio-images/key.png');
-      filter: invert(1);
+      //filter: invert(1);
     }
 
     .back {
@@ -1651,6 +1703,25 @@ body {
       width: 70px;
       position: absolute;
       top: 50vh;
+    }
+
+    .sec2 {
+      width: 100%;
+      margin-left: 0px;
+      text-align: center;
+      background-position: -220px -180px;
+    }
+
+    .ohai-image {
+      transform: scale(0.8);
+      width: 220px !important;
+    }
+
+    .section-text {
+      width: 100%;
+      padding: 20px;
+      font-size: 14px;
+      color: black;
     }
 }
 

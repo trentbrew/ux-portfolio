@@ -11,7 +11,10 @@ body {
 .home {
   -webkit-transition: 1.5s;
   transition: 1.5s;
-  background: #346791;
+  background: #e0e0e0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .fullPage {
@@ -212,6 +215,13 @@ body {
   pointer-events: none;
 }
 
+.white-container {
+  content: '';
+  background-image: url("../res/background-3.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
 .bubble-container {
   position: absolute;
   display: -webkit-box;
@@ -294,18 +304,34 @@ a {
   transition: 300ms;
 }
 
+.sec2 {
+  font-size: 18px;
+  margin-left: 300px;
+}
+
+.sec2 .ohai-image {
+  background-image: url("../res/ohai.gif");
+  background-position: -220px -180px;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 140px;
+  margin-bottom: 40px;
+  -webkit-filter: brightness(0.88);
+          filter: brightness(0.88);
+}
+
 .wave {
   width: 140px;
   height: 100vh;
   background: url("../res/wave.svg") repeat-y;
   pointer-events: none;
   z-index: 2;
-  margin-left: -130px;
   pointer-events: none;
-  background-position-y: 50%;
+  background-position-y: 180%;
   -webkit-transition: 1s;
   transition: 1s;
-  mix-blend-mode: darken;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .next-page-cover {
@@ -549,6 +575,11 @@ a {
   width: fit-content;
 }
 
+.section-text {
+  width: 650px;
+  font-size: 22px;
+}
+
 .port-item-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -576,25 +607,25 @@ a {
 }
 
 .port-img {
-  background: white;
+  background: black;
   margin-right: 40px;
   width: 250px;
   height: 125px;
   border-radius: 10px;
+  -webkit-box-shadow: 0px 7px 17px -1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 7px 17px -1px rgba(0, 0, 0, 0.2);
 }
 
 .port-text {
-  color: white;
+  color: black;
   opacity: 1;
 }
 
 .port-text h1 {
-  color: white;
   opacity: 0.9;
 }
 
 .port-text p {
-  color: white;
   opacity: 0.8;
 }
 
@@ -658,8 +689,6 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  -webkit-filter: invert(1);
-          filter: invert(1);
   width: 60px;
   height: 60px;
   -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
@@ -672,8 +701,6 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  -webkit-filter: invert(1);
-          filter: invert(1);
   width: 60px;
   height: 60px;
   -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
@@ -686,8 +713,6 @@ a {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  -webkit-filter: invert(1);
-          filter: invert(1);
   width: 60px;
   height: 60px;
   -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
@@ -704,6 +729,7 @@ a {
 }
 
 .port-text a {
+  color: black;
   padding: 0px 4px 0px 4px;
   border-radius: 5px;
   -webkit-transition: 300ms;
@@ -711,7 +737,7 @@ a {
 }
 
 .port-text a:hover {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .port-contact:hover {
@@ -1368,6 +1394,7 @@ a {
     width: 100% !important;
     height: 30vh;
     top: 0px;
+    background: #e0e0e0 !important;
   }
   .hero-text {
     -webkit-transform: scale(0.8);
@@ -1393,10 +1420,15 @@ a {
   }
   .home {
     background: #181818;
+    background-image: url("../res/background-3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
   .home .nav {
-    -webkit-filter: invert(1);
-            filter: invert(1);
+    -webkit-filter: invert(0);
+            filter: invert(0);
+    background: none;
   }
   .home .nav-active {
     -webkit-filter: invert(1) !important;
@@ -1428,6 +1460,8 @@ a {
     padding: 0px;
     margin-left: auto;
     margin-right: auto;
+    -webkit-filter: invert(1);
+            filter: invert(1);
   }
   .nav li {
     font-weight: normal;
@@ -1481,8 +1515,8 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-filter: invert(1);
-            filter: invert(1);
+    -webkit-filter: invert(0) !important;
+            filter: invert(0) !important;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -1529,7 +1563,7 @@ a {
   .port-item-container {
     display: block;
     width: 100%;
-    padding: 20px;
+    padding: 20px 0px 0px 0px;
     margin: 0px;
     border-radius: 0px;
   }
@@ -1539,62 +1573,66 @@ a {
   .port-text p {
     font-size: 12px;
   }
+  .ohai-image {
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .port-img {
     width: 40px;
     height: 40px;
     border-radius: 0px;
     margin: 0px auto 20px auto;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
   .port-img1 {
     width: 70px;
     height: 70px;
     background-color: rgba(0, 0, 0, 0);
     background-image: url("../res/portfolio-images/floors/floors-tinycon.png");
+    -webkit-filter: invert(1);
+            filter: invert(1);
   }
   .port-img2 {
     background-color: rgba(0, 0, 0, 0);
     background-image: url("../res/portfolio-images/backpack-barber/bb-small.png");
     width: 60px;
     height: 60px;
+    -webkit-filter: invert(1);
+            filter: invert(1);
   }
   .port-img3 {
     background-color: rgba(0, 0, 0, 0);
     background-image: url("../res/portfolio-images/spotify/s-logo.png");
-    -webkit-filter: brightness(0) invert(1);
-            filter: brightness(0) invert(1);
+    -webkit-filter: brightness(0);
+            filter: brightness(0);
   }
   .port-img4 {
     background-color: rgba(0, 0, 0, 0);
     background-image: url("../res/portfolio-images/material.png");
-    -webkit-filter: invert(1);
-            filter: invert(1);
   }
   .port-img5 {
     width: 55px;
     height: 55px;
     background-color: rgba(0, 0, 0, 0);
     background-image: url("../res/portfolio-images/music.jpg");
-    -webkit-filter: invert(1);
-            filter: invert(1);
   }
   .port-img6 {
     background-color: rgba(0, 0, 0, 0);
     background-image: url("../res/portfolio-images/puzzle.png");
-    -webkit-filter: invert(1);
-            filter: invert(1);
   }
   .port-img7 {
     background-color: rgba(0, 0, 0, 0);
     background-image: url("../res/portfolio-images/monday/monday-logo-2.png");
-    -webkit-filter: brightness(0) invert(1);
-            filter: brightness(0) invert(1);
+    -webkit-filter: brightness(0);
+            filter: brightness(0);
     border-radius: 100%;
   }
   .port-img8 {
     background-color: rgba(0, 0, 0, 0);
     background-image: url("../res/portfolio-images/key.png");
-    -webkit-filter: invert(1);
-            filter: invert(1);
   }
   .back {
     background: white;
@@ -1616,6 +1654,23 @@ a {
     width: 70px;
     position: absolute;
     top: 50vh;
+  }
+  .sec2 {
+    width: 100%;
+    margin-left: 0px;
+    text-align: center;
+    background-position: -220px -180px;
+  }
+  .ohai-image {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    width: 220px !important;
+  }
+  .section-text {
+    width: 100%;
+    padding: 20px;
+    font-size: 14px;
+    color: black;
   }
 }
 /*# sourceMappingURL=styles.css.map */

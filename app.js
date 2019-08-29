@@ -539,7 +539,7 @@ $(document).ready(function() {
     });
 
     whiteContainer.css({
-        width: '80%'
+        width: '88%'
     });
 
     studyBackdrop.css({
@@ -807,7 +807,7 @@ $(document).ready(function() {
 
     contactLink.click(function() {
         fullpage_api.setAutoScrolling(true);
-        fullpage_api.moveTo(4);
+        fullpage_api.moveTo(5);
         
         $('.ind1').css('width','0%');
         $('.ind2').css('width','0%');

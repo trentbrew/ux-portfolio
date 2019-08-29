@@ -1702,14 +1702,16 @@
             console.log(v.sectionIndex);
 
             if (v.sectionIndex > 0) {
-                document.querySelector('.white-container').style.width = '20%';
+                document.querySelector('.white-container').style.width = '30%';
                 //document.querySelectorAll('.port-item-container').style.background = 'red';
+                //document.querySelector('.white-container').style.background = 'black';
 
                 if(window.innerWidth <= 768) {
                     document.querySelector('.center-container').style.transition = '2s';
                     document.querySelector('.center-container').style.transform = 'translateY(-1200px)';
                     document.querySelector('.white-container').style.height = '100vh';
-                    document.querySelector('.white-container').style.opacity = '0';
+                    document.querySelector('.nav').style.background = '#181818';
+                    //document.querySelector('.white-container').style.opacity = '0';
                 }
                 else {
                     document.querySelector('.center-container').style.transform = 'translateX(1000px)';
@@ -1718,15 +1720,17 @@
 
                 //document.querySelector('.hero-image').style.width = '45px';
                 //document.querySelector('.hero-image').style.height = '45px';
-                document.querySelector('.wave').style.backgroundPositionY = '180%';
+                document.querySelector('.wave').style.backgroundPositionY = '50%';
             }
             else {
-                document.querySelector('.white-container').style.width = '80%';
+                document.querySelector('.white-container').style.width = '88%';
+                //document.querySelector('.white-container').style.filter = 'blur(0)';
 
                 if(window.innerWidth <= 768) {
                     document.querySelector('.center-container').style.transform = 'translateY(0px)';
                     document.querySelector('.white-container').style.height = '60px';
                     document.querySelector('.white-container').style.opacity = '1';
+                    document.querySelector('.nav').style.background = 'none';
                 }
                 else {
                     document.querySelector('.center-container').style.transform = 'translateX(0px)';
@@ -1736,36 +1740,36 @@
                 
                 //document.querySelector('.hero-image').style.width = '300px';
                 //document.querySelector('.hero-image').style.height = '300px';
-                document.querySelector('.wave').style.backgroundPositionY = '50%';
+                document.querySelector('.wave').style.backgroundPositionY = '180%';
             }
 
             if(v.sectionIndex == 0) {
-                document.querySelector('.home').style.background = '#346791';
+                //document.querySelector('.home').style.background = '#346791';
                 //document.querySelector('.home').style.filter = "";
 
                 if(window.innerWidth <= 768) {
-                    document.querySelector('.home').style.background = '#181818';
+                   //document.querySelector('.home').style.background = '#181818';
                 }
             }
 
             if(v.sectionIndex == 1) {
-                document.querySelector('.home').style.background = '#346791';
+                //document.querySelector('.home').style.background = '#346791';
                 
                 if(window.innerWidth <= 768) {
-                    document.querySelector('.home').style.background = '#346791';
+                    //document.querySelector('.home').style.background = '#346791';
                 }
             }
 
             if(v.sectionIndex == 2) {
-                document.querySelector('.home').style.background = '#346791';
+                //document.querySelector('.home').style.background = '#346791';
 
                 if(window.innerWidth <= 768) {
-                    document.querySelector('.home').style.background = '#346791';
+                    //document.querySelector('.home').style.background = '#346791';
                 }
             }
 
             if(v.sectionIndex == 3) {
-                document.querySelector('.home').style.background = '#8f618b';
+                //document.querySelector('.home').style.background = '#8f618b';
 
                 console.log('mark contact');
 
