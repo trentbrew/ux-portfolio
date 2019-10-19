@@ -1680,6 +1680,7 @@
             const ind1 = document.querySelector('.ind1');
             const ind2 = document.querySelector('.ind2');
             const ind3 = document.querySelector('.ind3');
+            const ind4 = document.querySelector('.ind4');
 
             //local variables
             var v = {
@@ -1720,10 +1721,10 @@
 
                 //document.querySelector('.hero-image').style.width = '45px';
                 //document.querySelector('.hero-image').style.height = '45px';
-                document.querySelector('.wave').style.backgroundPositionY = '50%';
+                document.querySelector('.wave').style.backgroundPositionY = '180%';
             }
             else {
-                document.querySelector('.white-container').style.width = '88%';
+                document.querySelector('.white-container').style.width = '80%';
                 //document.querySelector('.white-container').style.filter = 'blur(0)';
 
                 if(window.innerWidth <= 768) {
@@ -1740,7 +1741,7 @@
                 
                 //document.querySelector('.hero-image').style.width = '300px';
                 //document.querySelector('.hero-image').style.height = '300px';
-                document.querySelector('.wave').style.backgroundPositionY = '180%';
+                document.querySelector('.wave').style.backgroundPositionY = '50%';
             }
 
             if(v.sectionIndex == 0) {
@@ -1775,7 +1776,8 @@
 
                 ind1.style.width = '0%';
                 ind2.style.width = '0%';
-                ind3.style.width = '50%';
+                ind3.style.width = '0%';
+                ind4.style.width = '50%';
             }
 
             if(v.sectionIndex < 4) {
@@ -1783,6 +1785,7 @@
                 ind1.style.width = '50%';
                 ind2.style.width = '0%';
                 ind3.style.width = '0%';
+                ind4.style.width = '0%';
             }
 
             //quiting when destination scroll is the same as the current one

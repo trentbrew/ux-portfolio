@@ -68,24 +68,24 @@ $(document).ready(function() {
         $('.next-page-cover').css({
             'transition': '1s',
             backgroundColor: '#e0e0e0',
-            height: '100%',
+            //height: '100%',
         });
 
         $('.next-page-cover h3').css({
             'opacity':'0'
         });
 
-        /*whiteContainer.css({
+        whiteContainer.css({
             width: '100%',
             //background: '#e0e0e0'
-        });*/
+        });
 
-        /*wave.css({
+        wave.css({
             backgroundPositionY: '50%',
             //background: '#e0e0e0'
-        });*/
+        });
 
-        /*sectionNav.css({
+        sectionNav.css({
             opacity: 0
         });
                 
@@ -95,7 +95,7 @@ $(document).ready(function() {
 
         social.css({
             opacity: 0
-        });*/
+        });
 
         /*setTimeout(function() {
             $('.next-page-cover').css({
@@ -106,16 +106,21 @@ $(document).ready(function() {
 
         setTimeout(function() {
             window.open('floors.html',"_self");
-        }, 1000); 
+        }, 1500); 
     });
 
     item2.click(function() {
         $('.next-page-cover').css({
+            'transition': '1s',
             backgroundColor: '#e0e0e0',
-            height: '100%',
+            //height: '100%',
         });
 
-        /*whiteContainer.css({
+        $('.next-page-cover h3').css({
+            'opacity':'0'
+        });
+
+        whiteContainer.css({
             width: '100%',
             //background: '#e0e0e0'
         });
@@ -125,91 +130,262 @@ $(document).ready(function() {
             //background: '#e0e0e0'
         });
 
-        
+        sectionNav.css({
+            opacity: 0
+        });
+                
         nav.css({
             opacity: 0
         });
 
         social.css({
             opacity: 0
-        });*/
+        });
 
         setTimeout(function() {
             window.open('drummerboi.html',"_self");
-        }, 1000); 
+        }, 1500); 
     });
 
     item3.click(function() {
         $('.next-page-cover').css({
+            'transition': '1s',
             backgroundColor: '#e0e0e0',
-            height: '100%',
+            //height: '100%',
+        });
+
+        $('.next-page-cover h3').css({
+            'opacity':'0'
+        });
+
+        whiteContainer.css({
+            width: '100%',
+            //background: '#e0e0e0'
+        });
+
+        wave.css({
+            backgroundPositionY: '50%',
+            //background: '#e0e0e0'
+        });
+
+        sectionNav.css({
+            opacity: 0
+        });
+                
+        nav.css({
+            opacity: 0
+        });
+
+        social.css({
+            opacity: 0
         });
 
         setTimeout(function() {
             window.open('spotify.html',"_self");
-        }, 1000); 
+        }, 1500); 
     });
 
     item4.click(function() {
         $('.next-page-cover').css({
+            'transition': '1s',
             backgroundColor: '#e0e0e0',
-            height: '100%',
+            //height: '100%',
+        });
+
+        $('.next-page-cover h3').css({
+            'opacity':'0'
+        });
+
+        whiteContainer.css({
+            width: '100%',
+            //background: '#e0e0e0'
+        });
+
+        wave.css({
+            backgroundPositionY: '50%',
+            //background: '#e0e0e0'
+        });
+
+        sectionNav.css({
+            opacity: 0
+        });
+                
+        nav.css({
+            opacity: 0
+        });
+
+        social.css({
+            opacity: 0
         });
 
         setTimeout(function() {
             window.open('material-study.html',"_self");
-        }, 1000); 
+        }, 1500); 
     });
 
     item5.click(function() {
         $('.next-page-cover').css({
+            'transition': '1s',
             backgroundColor: '#e0e0e0',
-            height: '100%',
+            //height: '100%',
+        });
+
+        $('.next-page-cover h3').css({
+            'opacity':'0'
+        });
+
+        whiteContainer.css({
+            width: '100%',
+            //background: '#e0e0e0'
+        });
+
+        wave.css({
+            backgroundPositionY: '50%',
+            //background: '#e0e0e0'
+        });
+
+        sectionNav.css({
+            opacity: 0
+        });
+                
+        nav.css({
+            opacity: 0
+        });
+
+        social.css({
+            opacity: 0
         });
 
         setTimeout(function() {
             console.log('open resume link');
             window.open('backpack-barber.html',"_self");
-        }, 1000); 
+        }, 1500); 
     });
 
     item6.click(function() {
         $('.next-page-cover').css({
+            'transition': '1s',
             backgroundColor: '#e0e0e0',
-            height: '100%',
+            //height: '100%',
+        });
+
+        $('.next-page-cover h3').css({
+            'opacity':'0'
+        });
+
+        whiteContainer.css({
+            width: '100%',
+            //background: '#e0e0e0'
+        });
+
+        wave.css({
+            backgroundPositionY: '50%',
+            //background: '#e0e0e0'
+        });
+
+        sectionNav.css({
+            opacity: 0
+        });
+                
+        nav.css({
+            opacity: 0
+        });
+
+        social.css({
+            opacity: 0
         });
 
         setTimeout(function() {
             console.log('open resume link');
             window.open('jquery-puzzle.html',"_self");
-        }, 1000); 
+        }, 1500); 
     });
 
     item7.click(function() {
         $('.next-page-cover').css({
+            'transition': '1s',
             backgroundColor: '#e0e0e0',
-            height: '100%',
+            //height: '100%',
+        });
+
+        $('.next-page-cover h3').css({
+            'opacity':'0'
+        });
+
+        whiteContainer.css({
+            width: '100%',
+            //background: '#e0e0e0'
+        });
+
+        wave.css({
+            backgroundPositionY: '50%',
+            //background: '#e0e0e0'
+        });
+
+        sectionNav.css({
+            opacity: 0
+        });
+                
+        nav.css({
+            opacity: 0
+        });
+
+        social.css({
+            opacity: 0
         });
 
         setTimeout(function() {
             console.log('open resume link');
             window.open('monday-report.html',"_self");
-        }, 1000); 
+        }, 1500); 
     });
 
     item8.click(function() {
         $('.next-page-cover').css({
+            'transition': '1s',
             backgroundColor: '#e0e0e0',
-            height: '100%',
+            //height: '100%',
+        });
+
+        $('.next-page-cover h3').css({
+            'opacity':'0'
+        });
+
+        whiteContainer.css({
+            width: '100%',
+            //background: '#e0e0e0'
+        });
+
+        wave.css({
+            backgroundPositionY: '50%',
+            //background: '#e0e0e0'
+        });
+
+        sectionNav.css({
+            opacity: 0
+        });
+                
+        nav.css({
+            opacity: 0
+        });
+
+        social.css({
+            opacity: 0
         });
 
         setTimeout(function() {
             console.log('open resume link');
             window.open('quickkeys.html',"_self");
-        }, 1000); 
+        }, 1500); 
     });
 
     next1.click(function() {
+        $('body').css({
+            background: "#181818"
+        });
+        $('.study-container').css({
+            opacity: 0
+        });
         pageContainer.css({
             marginTop: '180px',
             opacity: 0
@@ -253,7 +429,7 @@ $(document).ready(function() {
 
         setTimeout(function() {
             window.open('drummerboi.html',"_self");
-        }, 1000); 
+        }, 1500); 
     });
 
     next2.click(function() {
@@ -300,7 +476,7 @@ $(document).ready(function() {
 
         setTimeout(function() {
             window.open('spotify.html',"_self");
-        }, 1000); 
+        }, 1500); 
     });
 
     next3.click(function() {
@@ -539,7 +715,7 @@ $(document).ready(function() {
     });
 
     whiteContainer.css({
-        width: '88%'
+        width: '80%'
     });
 
     studyBackdrop.css({
@@ -642,6 +818,63 @@ $(document).ready(function() {
 
         if(window.innerWidth <= 768) {
             console.log('currently on mobile');
+
+            item1.click(function() {
+                $('.next-page-cover').css({
+                    'transition': '1s',
+                    backgroundColor: '#181818',
+                    height: '100%',
+                });
+            });
+            item2.click(function() {
+                $('.next-page-cover').css({
+                    'transition': '1s',
+                    backgroundColor: '#181818',
+                    height: '100%',
+                });
+            });
+            item3.click(function() {
+                $('.next-page-cover').css({
+                    'transition': '1s',
+                    backgroundColor: '#181818',
+                    height: '100%',
+                });
+            });
+            item4.click(function() {
+                $('.next-page-cover').css({
+                    'transition': '1s',
+                    backgroundColor: '#181818',
+                    height: '100%',
+                });
+            });
+            item5.click(function() {
+                $('.next-page-cover').css({
+                    'transition': '1s',
+                    backgroundColor: '#181818',
+                    height: '100%',
+                });
+            });
+            item6.click(function() {
+                $('.next-page-cover').css({
+                    'transition': '1s',
+                    backgroundColor: '#181818',
+                    height: '100%',
+                });
+            });
+            item7.click(function() {
+                $('.next-page-cover').css({
+                    'transition': '1s',
+                    backgroundColor: '#181818',
+                    height: '100%',
+                });
+            });
+            item8.click(function() {
+                $('.next-page-cover').css({
+                    'transition': '1s',
+                    backgroundColor: '#181818',
+                    height: '100%',
+                });
+            });
     
             //fullpage_api.setAutoScrolling(false);
         }
@@ -660,19 +893,25 @@ $(document).ready(function() {
         $('.ind1').css('width','50%');
         $('.ind2').css('width','0%');
         $('.ind3').css('width','0%');
+        $('.ind4').css('width','0%');
     });
 
     resumeLink.click(function() {
         $('.ind1').css('width','0%');
-        $('.ind2').css('width','50%');
-        $('.ind3').css('width','0%');
+        $('.ind2').css('width','0%');
+        $('.ind3').css('width','50%');
+        $('.ind4').css('width','0%');
 
         $('.next-page-cover').css({
             height: '100%',
         });
 
-        /*whiteContainer.css({
-            width: '100%'
+        wave.css({
+            backgroundPositionY: '180%'
+        });
+
+        whiteContainer.css({
+            //width: '0%'
         });
 
         nav.css({
@@ -681,7 +920,7 @@ $(document).ready(function() {
 
         social.css({
             opacity: 0
-        });*/
+        });
 
         wave.css({
             //backgroundPositionY: '50%'
@@ -690,7 +929,7 @@ $(document).ready(function() {
         setTimeout(function() {
             console.log('open resume link');
             window.open('resume.html',"_self");
-        }, 1000);
+        }, 1500);
     });
 
     back.click(function() {
@@ -811,7 +1050,8 @@ $(document).ready(function() {
         
         $('.ind1').css('width','0%');
         $('.ind2').css('width','0%');
-        $('.ind3').css('width','50%');
+        $('.ind3').css('width','0%');
+        $('.ind4').css('width','50%');
     });
 
 });

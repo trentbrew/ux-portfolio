@@ -6,7 +6,7 @@ $ColorPrimary: rgb(58, 139, 189);
 }
 
 body {
-    //background: blue;
+    background: #181818;
     font-family: 'Nunito', Helvetica, sans-serif;
 }
 
@@ -191,7 +191,7 @@ body {
 
 .white-container {
   content: '';
-  background-image: url('../res/background-3.jpg');
+  //background-image: url('../res/background-3.jpg');
   background-position: center;
   //filter: brightness(0.8);
   background-size: cover;
@@ -234,6 +234,7 @@ body {
     //border-radius: 100%;
     margin-right: 7px;
     margin-left: 7px;
+    filter: invert(1);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -318,13 +319,14 @@ body {
     //animation: wave 8s linear infinite;
     pointer-events: none;
     z-index: 2;
+    margin-left: -130px; 
     //filter: brightness(1);
     //margin-left: -130px;
     pointer-events: none;
-    background-position-y: 180%;
+    background-position-y: 50%;
     transition: 1s;
     //mix-blend-mode: darken;
-    transform: rotate(180deg);
+    //transform: rotate(180deg);
     //filter: invert(1);
     //box-shadow: 0px 0px 70px 0px rgba(#e0e0e0,1);
 }
@@ -1045,7 +1047,7 @@ body {
     border-radius: 10px;
     top: 40px;
     left: 60px;
-    color: black;
+    color: white;
     text-align: center;
     display: inline-flex;
     //line-height: 60px;
@@ -1066,6 +1068,7 @@ body {
         height: 32px;
         margin-right: 26px;
         transition: 300ms;
+        filter: invert(1);
     }
   
     &:hover {
@@ -1163,13 +1166,22 @@ body {
   }
 
   .study-container {
-    color: rgba(0,0,0,0.8);
+    color: white;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    background: #181818;
     //margin-top: 100vh;
     transition: 1s;
     //padding-bottom: 70px;
+
+    a {
+      color: white !important;
+    }
+
+    p {
+      color: white;
+    }
 
     ul, ol {
       margin-bottom: 60px;
@@ -1183,7 +1195,11 @@ body {
 
     h3 {
       opacity: 1;
-      color: black;
+      color: white;
+    }
+
+    h1 {
+      color: white;
     }
 
     .study-backdrop {
@@ -1230,7 +1246,7 @@ body {
       height: max-content;
       padding: 0px 80px 80px 80px;
       z-index: 6;
-      opacity: 0.8;
+      //opacity: 0.8;
       margin: 0px !important;
       //filter: invert(1);
     }
@@ -1407,7 +1423,7 @@ body {
     }
 
     .bubbles-res {
-      filter: invert(0) !important;
+      filter: invert(0);
       opacity: 1;
       position: relative;
       margin-bottom: 100px;
@@ -1428,7 +1444,7 @@ body {
 
     .home {
       background: #181818;
-      background-image: url('../res/background-3.jpg');
+      //background-image: url('../res/background-3.jpg');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -1509,10 +1525,13 @@ body {
         font-size: 12px;
       }
       .bubble-container {
-        filter: invert(0);
         opacity: 1;
         position: relative;
         //margin-bottom: 150px;
+      }
+
+      .bubble-container a {
+        filter: invert(1); 
       }
     }
 
@@ -1536,7 +1555,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        filter: invert(0) !important;
+        filter: invert(1) !important;
         height: fit-content;
         margin: 0px;
     }
@@ -1681,13 +1700,14 @@ body {
     }
 
     .back {
-      background: white;
+      background: #181818;
       padding: 10px 0px 10px 30px;
       box-shadow: 0px 7px 17px -1px rgba(0,0,0,0.2);
       border-radius: 5px;
       //opacity: 1 !important;
       font-size: 12px;
       margin-left: -20px;
+      color: white;
 
       .back-arrow {
         background-size: 60%;
