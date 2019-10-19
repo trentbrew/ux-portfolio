@@ -1745,7 +1745,7 @@
             }
 
             if(v.sectionIndex == 0) {
-                //document.querySelector('.home').style.background = '#346791';
+                document.querySelector('.home').style.background = '#e0e0e0';
                 //document.querySelector('.home').style.filter = "";
 
                 if(window.innerWidth <= 768) {
@@ -1754,7 +1754,7 @@
             }
 
             if(v.sectionIndex == 1) {
-                //document.querySelector('.home').style.background = '#346791';
+                document.querySelector('.home').style.background = '#e0e0e0';
                 
                 if(window.innerWidth <= 768) {
                     //document.querySelector('.home').style.background = '#346791';
@@ -1762,7 +1762,15 @@
             }
 
             if(v.sectionIndex == 2) {
-                //document.querySelector('.home').style.background = '#346791';
+                document.querySelector('.home').style.background = '#e0e0e0';
+
+                if(window.innerWidth <= 768) {
+                    //document.querySelector('.home').style.background = '#346791';
+                }
+            }
+
+            if(v.sectionIndex == 3) {
+                document.querySelector('.home').style.background = '#e0e0e0';
 
                 if(window.innerWidth <= 768) {
                     //document.querySelector('.home').style.background = '#346791';
@@ -1770,14 +1778,20 @@
             }
 
             if(v.sectionIndex == 4) {
-                //document.querySelector('.home').style.background = '#8f618b';
+                document.querySelector('.home').style.background = '#1B95E0';
 
                 console.log('mark contact');
+
+                /*$('.fp-nav').css({
+                    filter: 'invert(1)'
+                });*/
 
                 ind1.style.width = '0%';
                 ind2.style.width = '0%';
                 ind3.style.width = '0%';
                 ind4.style.width = '50%';
+
+
             }
 
             if(v.sectionIndex < 4) {

@@ -546,6 +546,10 @@ a {
   transition: 300ms;
 }
 
+.sec7 .port-container p {
+  opacity: 1;
+}
+
 .nav-indicator {
   background: black;
   height: 3px;

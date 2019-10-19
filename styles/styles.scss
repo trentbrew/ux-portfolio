@@ -515,6 +515,14 @@ body {
       }
     }
   }
+
+  .sec7 .port-container {
+    //filter: invert(1);
+
+    p {
+      opacity: 1;
+    }
+  }
   
   .nav-indicator {
     background: black;
