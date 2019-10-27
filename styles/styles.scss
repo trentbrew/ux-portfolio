@@ -8,6 +8,7 @@ $ColorPrimary: rgb(58, 139, 189);
 body {
     background: #181818;
     font-family: 'Nunito', Helvetica, sans-serif;
+    color: #181818;
 }
 
 .home {
@@ -20,7 +21,7 @@ body {
 }
 
 .fullPage {
-    z-index: -1;
+    z-index: 4;
 }
 
 #logo path:nth-child(1) {
@@ -244,7 +245,7 @@ body {
   
     &:hover {
       cursor: pointer;
-      transform: translateY(-8px);
+      transform: scale(1.3);
     }
   }
   
@@ -299,6 +300,8 @@ body {
       width: 300px;
       height: 140px;
       margin-bottom: 40px;
+      border-radius: 30px;
+      transition: 8s;
       filter: brightness(0.88);
     }
 }
@@ -377,6 +380,7 @@ body {
       bottom: 0;
       left: 20%;
       right: 0;
+      pointer-events: none;
       //background: gray;
       z-index: 2;
       margin-left: auto;
@@ -519,10 +523,22 @@ body {
   .sec7 .port-container {
     //filter: invert(1);
 
+
     p {
       opacity: 1;
     }
   }
+
+  .port-container {
+    transition: 5s;
+    opacity: 0;
+  }
+
+  .port-container5 {
+    opacity: 0.9;
+  }
+
+
   
   .nav-indicator {
     background: black;
@@ -593,7 +609,7 @@ body {
   }
 
   .port-text {
-      color: black;
+      color:#181818;
       opacity: 1;
 
       h1 {
@@ -659,6 +675,27 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+  }
+
+  .port-img9 {
+    background-image: url('../res/portfolio-images/walls/img1.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .art-item-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    transition: 5s;
+
+    img {
+      height: 65%;
+      border-radius: 15px;
+    }
   }
 
   .phone {
@@ -1622,6 +1659,10 @@ body {
         padding: 20px 0px 0px 0px;
         margin: 0px;
         border-radius: 0px;
+    }
+
+    .art-item-container img {
+      height: 80%;
     }
 
     .port-text {

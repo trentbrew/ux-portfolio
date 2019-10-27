@@ -1745,7 +1745,15 @@
             }
 
             if(v.sectionIndex == 0) {
+                document.querySelector('.white-container').style.zIndex = '1';
                 document.querySelector('.home').style.background = '#e0e0e0';
+                document.querySelector('.fp-left').style.filter = 'invert(0)';
+                document.querySelector('.fp-left').style.opacity = '1';
+                document.querySelector('.port-container4').style.opacity = '0';
+                document.querySelector('.port-container3').style.opacity = '0';
+                document.querySelector('.port-container2').style.opacity = '0';
+                document.querySelector('.ohai-image').style.opacity = '1';
+                document.querySelector('.art-item-container').style.opacity = '0';
                 //document.querySelector('.home').style.filter = "";
 
                 if(window.innerWidth <= 768) {
@@ -1754,7 +1762,15 @@
             }
 
             if(v.sectionIndex == 1) {
+                document.querySelector('.white-container').style.zIndex = '1';
                 document.querySelector('.home').style.background = '#e0e0e0';
+                document.querySelector('.fp-left').style.filter = 'invert(0)';
+                document.querySelector('.fp-left').style.opacity = '1';
+                document.querySelector('.port-container4').style.opacity = '1';
+                document.querySelector('.port-container3').style.opacity = '1';
+                document.querySelector('.port-container2').style.opacity = '1';
+                document.querySelector('.ohai-image').style.opacity = '1';
+                document.querySelector('.art-item-container').style.opacity = '0';
                 
                 if(window.innerWidth <= 768) {
                     //document.querySelector('.home').style.background = '#346791';
@@ -1762,7 +1778,15 @@
             }
 
             if(v.sectionIndex == 2) {
+                document.querySelector('.white-container').style.zIndex = '1';
                 document.querySelector('.home').style.background = '#e0e0e0';
+                document.querySelector('.fp-left').style.filter = 'invert(0)';
+                document.querySelector('.fp-left').style.opacity = '1';
+                document.querySelector('.port-container4').style.opacity = '1';
+                document.querySelector('.port-container3').style.opacity = '1';
+                document.querySelector('.port-container2').style.opacity = '1';
+                document.querySelector('.ohai-image').style.opacity = '1';
+                document.querySelector('.art-item-container').style.opacity = '0';
 
                 if(window.innerWidth <= 768) {
                     //document.querySelector('.home').style.background = '#346791';
@@ -1770,7 +1794,15 @@
             }
 
             if(v.sectionIndex == 3) {
+                document.querySelector('.white-container').style.zIndex = '1';
                 document.querySelector('.home').style.background = '#e0e0e0';
+                document.querySelector('.fp-left').style.filter = 'invert(0)';
+                document.querySelector('.fp-left').style.opacity = '1';
+                document.querySelector('.port-container4').style.opacity = '1';
+                document.querySelector('.port-container3').style.opacity = '1';
+                document.querySelector('.port-container2').style.opacity = '1';
+                document.querySelector('.ohai-image').style.opacity = '1';
+                document.querySelector('.art-item-container').style.opacity = '0';
 
                 if(window.innerWidth <= 768) {
                     //document.querySelector('.home').style.background = '#346791';
@@ -1778,7 +1810,62 @@
             }
 
             if(v.sectionIndex == 4) {
-                document.querySelector('.home').style.background = '#1B95E0';
+                document.querySelector('.white-container').style.zIndex = '1';
+                document.querySelector('.home').style.background = '#e0e0e0';
+                document.querySelector('.fp-left').style.filter = 'invert(0)';
+                document.querySelector('.fp-left').style.opacity = '1';
+                document.querySelector('.port-container4').style.opacity = '1';
+                document.querySelector('.port-container3').style.opacity = '1';
+                document.querySelector('.port-container2').style.opacity = '1';
+                document.querySelector('.ohai-image').style.opacity = '1';
+                document.querySelector('.art-item-container').style.opacity = '0';
+
+                ind1.style.width = '50%';
+                ind2.style.width = '0%';
+                ind3.style.width = '0%';
+                ind4.style.width = '0%';
+
+                if(window.innerWidth <= 768) {
+                    //document.querySelector('.home').style.background = '#346791';
+                }
+            }
+
+            //illustrations
+            if(v.sectionIndex == 5) {
+
+                if(window.innerWidth <= 768) {
+                    //document.querySelector('.home').style.background = '#346791';
+                }
+                document.querySelector('.white-container').style.width = '100%';
+                //document.querySelector('.wave').style.translateX = '400px';
+                document.querySelector('.white-container').style.zIndex = '-1';
+                document.querySelector('.wave').style.backgroundPositionY = '50%';
+                document.querySelector('.fp-left').style.opacity = '0';
+                document.querySelector('.port-container4').style.opacity = '0';
+                document.querySelector('.port-container3').style.opacity = '0';
+                document.querySelector('.port-container2').style.opacity = '0';
+                document.querySelector('.ohai-image').style.opacity = '0';
+                document.querySelector('.art-item-container').style.opacity = '1';
+
+                ind1.style.width = '0%';
+                ind2.style.width = '50%';
+                ind3.style.width = '0%';
+                ind4.style.width = '0%';
+            }
+
+            //contact
+            if(v.sectionIndex == 6) {
+                document.querySelector('.white-container').style.zIndex = '1';
+                //document.querySelector('.home').style.background = '#1B95E0';
+                document.querySelector('.fp-left').style.filter = 'invert(0)';
+                document.querySelector('.fp-left').style.opacity = '1';
+                document.querySelector('.port-container4').style.opacity = '1';
+                document.querySelector('.port-container3').style.opacity = '1';
+                document.querySelector('.port-container2').style.opacity = '1';
+                document.querySelector('.ohai-image').style.opacity = '1';
+                document.querySelector('.art-item-container').style.opacity = '0';
+                
+                //document.querySelector('port-container').style.filter = 'invert(1)';
 
                 console.log('mark contact');
 

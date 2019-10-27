@@ -13,6 +13,7 @@ $(document).ready(function() {
     const portfolioLink = $('.portfolio');
     const resumeLink = $('.resume');
     const contactLink = $('.contact');
+    const illustrationsLink = $('.illustrations');
     const nav = $('.nav');
     const social = $('.social-bubble');
     const studyBackdrop = $('.study-backdrop');
@@ -36,6 +37,9 @@ $(document).ready(function() {
     const item6 = $('.item6');
     const item7 = $('.item7');
     const item8 = $('.item8');
+    const item9 = $('.item9');
+    const item10 = $('.item10');
+    const item11 = $('.item11');
 
     const greetings = document.querySelectorAll('#greetings path');
 
@@ -376,6 +380,45 @@ $(document).ready(function() {
         setTimeout(function() {
             console.log('open resume link');
             window.open('quickkeys.html',"_self");
+        }, 1500); 
+    });
+
+    item9.click(function() {
+        $('.next-page-cover').css({
+            'transition': '1s',
+            backgroundColor: '#e0e0e0',
+            //height: '100%',
+        });
+
+        $('.next-page-cover h3').css({
+            'opacity':'0'
+        });
+
+        whiteContainer.css({
+            width: '100%',
+            //background: '#e0e0e0'
+        });
+
+        wave.css({
+            backgroundPositionY: '50%',
+            //background: '#e0e0e0'
+        });
+
+        sectionNav.css({
+            opacity: 0
+        });
+                
+        nav.css({
+            opacity: 0
+        });
+
+        social.css({
+            opacity: 0
+        });
+
+        setTimeout(function() {
+            console.log('open resume link');
+            window.open('walls.html',"_self");
         }, 1500); 
     });
 
@@ -811,7 +854,9 @@ $(document).ready(function() {
         autoScrolling: true,
         navigation: true,
         navigationPosition: 'left',
-        scrollingSpeed: 1000
+        scrollingSpeed: 1000,
+        slidesNavigation: true,
+        slidesNavPosition: 'bottom'
     });
 
         //----------for mobile----------
@@ -1046,12 +1091,22 @@ $(document).ready(function() {
 
     contactLink.click(function() {
         fullpage_api.setAutoScrolling(true);
-        fullpage_api.moveTo(5);
+        fullpage_api.moveTo(7);
         
         $('.ind1').css('width','0%');
         $('.ind2').css('width','0%');
         $('.ind3').css('width','0%');
         $('.ind4').css('width','50%');
+    });
+
+    illustrationsLink.click(function() {
+        fullpage_api.setAutoScrolling(true);
+        fullpage_api.moveTo(6);
+        
+        $('.ind1').css('width','0%');
+        $('.ind2').css('width','50%');
+        $('.ind3').css('width','0%');
+        $('.ind4').css('width','0%');
     });
 
 });
