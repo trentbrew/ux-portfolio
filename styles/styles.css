@@ -1739,5 +1739,11 @@ a {
     font-size: 14px;
     color: black;
   }
+  img {
+    height: 100vh !important;
+    border-radius: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
