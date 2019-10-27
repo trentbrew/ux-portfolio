@@ -1594,20 +1594,23 @@ body {
 
     .bubble-container {
         position: fixed;
-        padding: 0px 0px 25px 0px;
+        padding: 25px 0px 25px 0px;
         left: 0;
         right: 0;
         display: flex;
         justify-content: center;
         align-items: center;
-        filter: invert(1) !important;
+        //filter: invert(1) !important;
         height: fit-content;
         margin: 0px;
+        background: #181818;
+        opacity: 1 !important;
     }
 
     .bubble-container div {
         width: 15px;
         height: 15px;
+        filter: invert(1) !important;
     }
 
     .center-container {
@@ -1794,10 +1797,15 @@ body {
     }
 
     .art-item-container img {
-      height: 100vh !important;
-      border-radius: 0px;
       margin-left: auto;
       margin-right: auto;
+      width: 70vw;
+      height: auto !important;
+    }
+
+    .sec-art {
+      //display: none;
+      background: #181818;
     }
 }
 

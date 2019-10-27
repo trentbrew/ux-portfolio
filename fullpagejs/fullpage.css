@@ -246,11 +246,13 @@ html.fp-enabled,
         width: 0;
         border-width: 20px 20px 20px 0;
         border-color: transparent #fff transparent transparent;
+        bottom: 10px;
     }
     .fp-controlArrow.fp-next {
         right: 10px;
         border-width: 20px 0 20px 20px;
         border-color: transparent transparent transparent #fff;
+        bottom: 10px;
     }
 
     .fp-slidesNav {

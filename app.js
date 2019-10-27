@@ -422,6 +422,84 @@ $(document).ready(function() {
         }, 1500); 
     });
 
+    item10.click(function() {
+        $('.next-page-cover').css({
+            'transition': '1s',
+            backgroundColor: '#e0e0e0',
+            //height: '100%',
+        });
+
+        $('.next-page-cover h3').css({
+            'opacity':'0'
+        });
+
+        whiteContainer.css({
+            width: '100%',
+            //background: '#e0e0e0'
+        });
+
+        wave.css({
+            backgroundPositionY: '50%',
+            //background: '#e0e0e0'
+        });
+
+        sectionNav.css({
+            opacity: 0
+        });
+                
+        nav.css({
+            opacity: 0
+        });
+
+        social.css({
+            opacity: 0
+        });
+
+        setTimeout(function() {
+            //console.log('open resume link');
+            window.open('coin-tracker.html',"_self");
+        }, 1500); 
+    });
+
+    item11.click(function() {
+        $('.next-page-cover').css({
+            'transition': '1s',
+            backgroundColor: '#e0e0e0',
+            //height: '100%',
+        });
+
+        $('.next-page-cover h3').css({
+            'opacity':'0'
+        });
+
+        whiteContainer.css({
+            width: '100%',
+            //background: '#e0e0e0'
+        });
+
+        wave.css({
+            backgroundPositionY: '50%',
+            //background: '#e0e0e0'
+        });
+
+        sectionNav.css({
+            opacity: 0
+        });
+                
+        nav.css({
+            opacity: 0
+        });
+
+        social.css({
+            opacity: 0
+        });
+
+        setTimeout(function() {
+            //console.log('open resume link');
+            window.open('booksmart.html',"_self");
+        }, 1500); 
+    });
+
     next1.click(function() {
         $('body').css({
             background: "#181818"
