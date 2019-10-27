@@ -1750,9 +1750,6 @@
                 document.querySelector('.home').style.background = '#e0e0e0';
                 document.querySelector('.fp-left').style.filter = 'invert(0)';
                 document.querySelector('.fp-left').style.opacity = '1';
-                document.querySelector('.port-container4').style.opacity = '0';
-                document.querySelector('.port-container3').style.opacity = '0';
-                document.querySelector('.port-container2').style.opacity = '0';
                 document.querySelector('.ohai-image').style.opacity = '1';
                 document.querySelector('.art-item-container').style.opacity = '0';
                 //document.querySelector('.home').style.filter = "";
@@ -1767,9 +1764,6 @@
                 document.querySelector('.home').style.background = '#e0e0e0';
                 document.querySelector('.fp-left').style.filter = 'invert(0)';
                 document.querySelector('.fp-left').style.opacity = '1';
-                document.querySelector('.port-container4').style.opacity = '1';
-                document.querySelector('.port-container3').style.opacity = '1';
-                document.querySelector('.port-container2').style.opacity = '1';
                 document.querySelector('.ohai-image').style.opacity = '1';
                 document.querySelector('.art-item-container').style.opacity = '0';
                 
@@ -1783,9 +1777,6 @@
                 document.querySelector('.home').style.background = '#e0e0e0';
                 document.querySelector('.fp-left').style.filter = 'invert(0)';
                 document.querySelector('.fp-left').style.opacity = '1';
-                document.querySelector('.port-container4').style.opacity = '1';
-                document.querySelector('.port-container3').style.opacity = '1';
-                document.querySelector('.port-container2').style.opacity = '1';
                 document.querySelector('.ohai-image').style.opacity = '1';
                 document.querySelector('.art-item-container').style.opacity = '0';
 
@@ -1799,25 +1790,24 @@
                 document.querySelector('.home').style.background = '#e0e0e0';
                 document.querySelector('.fp-left').style.filter = 'invert(0)';
                 document.querySelector('.fp-left').style.opacity = '1';
-                document.querySelector('.port-container4').style.opacity = '1';
-                document.querySelector('.port-container3').style.opacity = '1';
-                document.querySelector('.port-container2').style.opacity = '1';
                 document.querySelector('.ohai-image').style.opacity = '1';
                 document.querySelector('.art-item-container').style.opacity = '0';
 
                 if(window.innerWidth <= 768) {
                     //document.querySelector('.home').style.background = '#346791';
                 }
+
+                ind1.style.width = '50%';
+                ind2.style.width = '0%';
+                ind3.style.width = '0%';
+                ind4.style.width = '0%';
             }
 
-            if(v.sectionIndex == 4) {
+            /*if(v.sectionIndex == 4) {
                 document.querySelector('.white-container').style.zIndex = '1';
                 document.querySelector('.home').style.background = '#e0e0e0';
                 document.querySelector('.fp-left').style.filter = 'invert(0)';
                 document.querySelector('.fp-left').style.opacity = '1';
-                document.querySelector('.port-container4').style.opacity = '1';
-                document.querySelector('.port-container3').style.opacity = '1';
-                document.querySelector('.port-container2').style.opacity = '1';
                 document.querySelector('.ohai-image').style.opacity = '1';
                 document.querySelector('.art-item-container').style.opacity = '0';
 
@@ -1829,10 +1819,10 @@
                 if(window.innerWidth <= 768) {
                     //document.querySelector('.home').style.background = '#346791';
                 }
-            }
+            }*/
 
             //illustrations
-            if(v.sectionIndex == 5) {
+            if(v.sectionIndex == 4) {
 
                 if(window.innerWidth <= 768) {
                     //document.querySelector('.home').style.background = '#346791';
@@ -1842,9 +1832,6 @@
                 document.querySelector('.white-container').style.zIndex = '-1';
                 document.querySelector('.wave').style.backgroundPositionY = '50%';
                 document.querySelector('.fp-left').style.opacity = '0';
-                document.querySelector('.port-container4').style.opacity = '0';
-                document.querySelector('.port-container3').style.opacity = '0';
-                document.querySelector('.port-container2').style.opacity = '0';
                 document.querySelector('.ohai-image').style.opacity = '0';
                 document.querySelector('.art-item-container').style.opacity = '1';
 
@@ -1855,22 +1842,18 @@
             }
 
             //contact
-            if(v.sectionIndex == 6) {
+            if(v.sectionIndex == 5) {
                 document.querySelector('.white-container').style.zIndex = '1';
                 //document.querySelector('.home').style.background = '#1B95E0';
                 document.querySelector('.fp-left').style.filter = 'invert(0)';
                 document.querySelector('.fp-left').style.opacity = '1';
-                document.querySelector('.port-container4').style.opacity = '1';
-                document.querySelector('.port-container3').style.opacity = '1';
-                document.querySelector('.port-container2').style.opacity = '1';
                 document.querySelector('.ohai-image').style.opacity = '1';
                 document.querySelector('.art-item-container').style.opacity = '0';
                 
                 //document.querySelector('port-container').style.filter = 'invert(1)';
 
                 if(window.innerWidth <= 768) {
-                    document.querySelector('.bubble-container').style.opacity = '0';
-                    document.querySelector('.sec-art').style.background = '#181818';
+                    document.querySelector('.bubble-container').style.opacity = '0 !important';
                 }
 
                 console.log('mark contact');
@@ -1887,13 +1870,13 @@
 
             }
 
-            if(v.sectionIndex < 4) {
+            /*if(v.sectionIndex < 4) {
 
                 ind1.style.width = '50%';
                 ind2.style.width = '0%';
                 ind3.style.width = '0%';
                 ind4.style.width = '0%';
-            }
+            }*/
 
             //quiting when destination scroll is the same as the current one
             if((v.activeSection == element && !isResizing) || (options.scrollBar && getScrollTop() === v.dtop && !hasClass(element, AUTO_HEIGHT) )){ return; }

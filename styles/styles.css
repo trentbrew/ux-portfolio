@@ -558,7 +558,6 @@ a {
 .port-container {
   -webkit-transition: 5s;
   transition: 5s;
-  opacity: 0;
 }
 
 .port-container5 {
@@ -1701,6 +1700,10 @@ a {
   .port-img8 {
     background-color: rgba(0, 0, 0, 0);
     background-image: url("../res/portfolio-images/key.png");
+  }
+  .port-img9 {
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("../res/maze-icon.png");
   }
   .back {
     background: #181818;

@@ -1169,7 +1169,7 @@ $(document).ready(function() {
 
     contactLink.click(function() {
         fullpage_api.setAutoScrolling(true);
-        fullpage_api.moveTo(7);
+        fullpage_api.moveTo(6);
         
         $('.ind1').css('width','0%');
         $('.ind2').css('width','0%');
@@ -1179,7 +1179,7 @@ $(document).ready(function() {
 
     illustrationsLink.click(function() {
         fullpage_api.setAutoScrolling(true);
-        fullpage_api.moveTo(6);
+        fullpage_api.moveTo(5);
         
         $('.ind1').css('width','0%');
         $('.ind2').css('width','50%');

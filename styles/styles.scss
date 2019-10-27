@@ -531,7 +531,7 @@ body {
 
   .port-container {
     transition: 5s;
-    opacity: 0;
+    //opacity: 0;
   }
 
   .port-container5 {
@@ -1748,6 +1748,12 @@ body {
     .port-img8 {
       background-color: rgba(0,0,0,0);
       background-image: url('../res/portfolio-images/key.png');
+      //filter: invert(1);
+    }
+
+    .port-img9 {
+      background-color: rgba(0,0,0,0);
+      background-image: url('../res/maze-icon.png');
       //filter: invert(1);
     }
 
