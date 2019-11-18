@@ -682,7 +682,7 @@ a {
 }
 
 .port-img6 {
-  background-image: url("../res/portfolio-images/puzzle.gif");
+  background-image: url("../res/portfolio-images/solar-system.gif");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -696,7 +696,7 @@ a {
 }
 
 .port-img8 {
-  background-image: url("../res/portfolio-images/quickkeys.gif");
+  background-image: url("../res/portfolio-images/coin-tracker.gif");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -876,7 +876,6 @@ a {
 .res-neck {
   background-color: black;
   padding: 10px;
-  color: rgba(255, 255, 255, 0.7);
 }
 
 .res-neck .res-contact {
@@ -888,7 +887,7 @@ a {
   display: -ms-inline-flexbox;
   display: inline-flex;
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.7);
+  color: white;
 }
 
 .res-neck .res-contact .contact .contact-icon {
@@ -1055,9 +1054,9 @@ a {
   background-color: black;
   color: white;
   font-size: 12px;
-  padding: 5px;
-  line-height: 28px;
-  border-radius: 5px;
+  padding: 5px 10px 5px 10px;
+  line-height: 30px;
+  border-radius: 10px;
 }
 
 .res-body .res-sum span span {
@@ -1688,7 +1687,7 @@ a {
   }
   .port-img6 {
     background-color: rgba(0, 0, 0, 0);
-    background-image: url("../res/portfolio-images/puzzle.png");
+    background-image: url("../res/saturn.png");
   }
   .port-img7 {
     background-color: rgba(0, 0, 0, 0);
@@ -1699,7 +1698,7 @@ a {
   }
   .port-img8 {
     background-color: rgba(0, 0, 0, 0);
-    background-image: url("../res/portfolio-images/key.png");
+    background-image: url("../res/portfolio-images/puzzle.png");
   }
   .port-img9 {
     background-color: rgba(0, 0, 0, 0);

@@ -301,7 +301,7 @@ $(document).ready(function() {
 
         setTimeout(function() {
             console.log('open resume link');
-            window.open('jquery-puzzle.html',"_self");
+            window.open('solar-system.html',"_self");
         }, 1500); 
     });
 
@@ -379,7 +379,7 @@ $(document).ready(function() {
 
         setTimeout(function() {
             console.log('open resume link');
-            window.open('quickkeys.html',"_self");
+            window.open('coin-tracker.html',"_self");
         }, 1500); 
     });
 
@@ -934,7 +934,9 @@ $(document).ready(function() {
         navigationPosition: 'left',
         scrollingSpeed: 1000,
         slidesNavigation: true,
-        slidesNavPosition: 'bottom'
+        slidesNavPosition: 'bottom',
+        navigationTooltips: [' ',' ','Design', 'Dev','',''],
+        showActiveTooltip: true
     });
 
         //----------for mobile----------

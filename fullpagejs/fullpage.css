@@ -108,7 +108,7 @@ html.fp-enabled,
     right: 17px;
 }
 #fp-nav.fp-left {
-    left: 1%;
+    left: 0%;
 }
 .fp-slidesNav{
     position: absolute;
@@ -174,7 +174,7 @@ html.fp-enabled,
     border: 0;
     background: #000;
     opacity: 0.3;
-    left: 50%;
+    left: 20%;
     top: 50%;
     margin: -2px 0 0 -2px;
     -webkit-transition: all 0.6s ease-in-out;
@@ -192,9 +192,11 @@ html.fp-enabled,
 #fp-nav ul li .fp-tooltip {
     position: absolute;
     top: -2px;
-    color: #fff;
-    font-size: 14px;
-    font-family: arial, helvetica, sans-serif;
+    color: #000;
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 10px;
+    line-height: 24px;
     white-space: nowrap;
     max-width: 220px;
     overflow: hidden;
