@@ -844,8 +844,17 @@ body {
     opacity: 0;
     transition: 1s;
 
+    .research-title {
+      background: white !important;
+      color: black !important; 
+      opacity: 0.4;
+      font-size: 16px !important;
+      margin-left: 0px !important;
+      font-weight: normal;
+    }
+
     ul {
-      list-style: auto;
+      //list-style: bullets !important;
     }
 
     a {
@@ -979,6 +988,10 @@ body {
       color: $ColorTextSecondary;
       font-size: 12px;
     }
+
+    .first {
+      width: 90%;
+    }
   
     .body-container {
       padding: $GlobalPadding;
@@ -994,7 +1007,9 @@ body {
   
       span {
         font-weight: lighter;
-        color: $ColorTextSecondary;
+        //color: $ColorTextSecondary;
+        color: black;
+        opacity: 0.4;
       }
     }
 

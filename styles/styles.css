@@ -858,8 +858,13 @@ a {
   transition: 1s;
 }
 
-.page-container ul {
-  list-style: auto;
+.page-container .research-title {
+  background: white !important;
+  color: black !important;
+  opacity: 0.4;
+  font-size: 16px !important;
+  margin-left: 0px !important;
+  font-weight: normal;
 }
 
 .page-container a {
@@ -988,6 +993,10 @@ a {
   font-size: 12px;
 }
 
+.res-body .first {
+  width: 90%;
+}
+
 .res-body .body-container {
   padding: 30px;
 }
@@ -998,7 +1007,8 @@ a {
 
 .res-body .res-ex span {
   font-weight: lighter;
-  color: #676767;
+  color: black;
+  opacity: 0.4;
 }
 
 .res-body h2 {
