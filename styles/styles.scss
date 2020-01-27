@@ -11,6 +11,10 @@ body {
     color: #181818;
 }
 
+#fullPage {
+  //cursor: pointer;
+}
+
 .home {
     transition: 1.5s;
     background: #e0e0e0;
@@ -183,7 +187,7 @@ body {
     right: 0px;
     background: #181818;
     z-index: 1;
-    transition: 2s;
+    transition: 1.4s;
     display: flex;
     align-items: center;
     //filter: blur(10px);
@@ -365,7 +369,7 @@ body {
   }
 
   .hero-text {
-      transition: 2s;
+      transition: 1s;
       opacity: 0;
       //margin-left: -200px;
       color: white;
@@ -386,6 +390,7 @@ body {
       margin-left: auto;
       margin-right: auto;
       transition: 2.5s;
+      //cursor: pointer;
       //color: $ColorPrimary;
 
       h1 {
@@ -398,6 +403,12 @@ body {
           opacity: 0.6;
           margin-top:-30px;
       }
+  }
+
+  .study-container {
+    img {
+      //filter: invert(1);
+    }
   }
 
   //----------arrow stuff----------
@@ -593,8 +604,13 @@ body {
       transition: background 300ms, margin-top 1s;
 
       &:hover {
-          background: rgba(black, 0.2);
+          background: rgba(black, 0.15);
           cursor: pointer;
+
+          .port-img {
+            transform: scale(0.95);
+            box-shadow: 0px 7px 17px -1px rgba(0,0,0,0.1);
+          }
       }
   }
 
@@ -605,6 +621,7 @@ body {
     width: 250px;
     height: 125px;
     border-radius: 10px;
+    transition: 300ms;
     box-shadow: 0px 7px 17px -1px rgba(0,0,0,0.2);
   }
 
@@ -615,11 +632,13 @@ body {
       h1 {
           //color: black;
           opacity: 0.9;
+          font-size: 28px;
       }
 
       p {
           //color: white;
           opacity: 0.8;
+          font-size: 16px;
       }
   }
 
@@ -657,7 +676,10 @@ body {
   }
   
   .port-img6 {
-    background-image: url('../res/portfolio-images/solar-system.gif');
+    //background-image: url('../res/portfolio-images/sonic/sv-aquatic-kingdom.gif');
+    //background-image: url('../res/portfolio-images/sonic/sv-frozen-mountain.gif');
+    //background-image: url('../res/portfolio-images/sonic/sv-skyward-terminal.gif');
+    background-image: url('../res/portfolio-images/sonic/sonicgx.gif');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -671,7 +693,7 @@ body {
   }
 
   .port-img8 {
-    background-image: url('../res/portfolio-images/coin-tracker.gif');
+    background-image: url('../res/portfolio-images/puzzle.gif');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -679,6 +701,34 @@ body {
 
   .port-img9 {
     background-image: url('../res/portfolio-images/walls/img1.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .port-img12 {
+    background-image: url('../res/portfolio-images/nihal.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .port-img13 {
+    background-image: url('../res/portfolio-images/coin-tracker.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .port-img14 {
+    background-image: url('../res/portfolio-images/solar-system.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .port-img15 {
+    background-image: url('../res/portfolio-images/booksmart.gif');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1781,6 +1831,8 @@ body {
       width: 70px;
       position: absolute;
       top: 50vh;
+      cursor: pointer;
+      z-index: 999;
     }
 
     .sec2 {

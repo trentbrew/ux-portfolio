@@ -206,8 +206,8 @@ body {
   right: 0px;
   background: #181818;
   z-index: 1;
-  -webkit-transition: 2s;
-  transition: 2s;
+  -webkit-transition: 1.4s;
+  transition: 1.4s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -366,8 +366,8 @@ a {
 }
 
 .hero-text {
-  -webkit-transition: 2s;
-  transition: 2s;
+  -webkit-transition: 1s;
+  transition: 1s;
   opacity: 0;
   color: white;
 }
@@ -621,8 +621,15 @@ a {
 }
 
 .port-item-container:hover {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.15);
   cursor: pointer;
+}
+
+.port-item-container:hover .port-img {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+  -webkit-box-shadow: 0px 7px 17px -1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 7px 17px -1px rgba(0, 0, 0, 0.1);
 }
 
 .port-img {
@@ -631,6 +638,8 @@ a {
   width: 250px;
   height: 125px;
   border-radius: 10px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
   -webkit-box-shadow: 0px 7px 17px -1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 7px 17px -1px rgba(0, 0, 0, 0.2);
 }
@@ -642,10 +651,12 @@ a {
 
 .port-text h1 {
   opacity: 0.9;
+  font-size: 28px;
 }
 
 .port-text p {
   opacity: 0.8;
+  font-size: 16px;
 }
 
 .port-img1 {
@@ -682,7 +693,7 @@ a {
 }
 
 .port-img6 {
-  background-image: url("../res/portfolio-images/solar-system.gif");
+  background-image: url("../res/portfolio-images/sonic/sonicgx.gif");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -696,7 +707,7 @@ a {
 }
 
 .port-img8 {
-  background-image: url("../res/portfolio-images/coin-tracker.gif");
+  background-image: url("../res/portfolio-images/puzzle.gif");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -704,6 +715,34 @@ a {
 
 .port-img9 {
   background-image: url("../res/portfolio-images/walls/img1.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.port-img12 {
+  background-image: url("../res/portfolio-images/nihal.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.port-img13 {
+  background-image: url("../res/portfolio-images/coin-tracker.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.port-img14 {
+  background-image: url("../res/portfolio-images/solar-system.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.port-img15 {
+  background-image: url("../res/portfolio-images/booksmart.gif");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1725,6 +1764,8 @@ a {
     width: 70px;
     position: absolute;
     top: 50vh;
+    cursor: pointer;
+    z-index: 999;
   }
   .sec2 {
     width: 100%;

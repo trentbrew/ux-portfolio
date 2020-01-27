@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+    <script src="fullpagejs/fullpage.js"></script>
+    <script src="app.js"></script>
+    <link type="text/css" rel="stylesheet" href="styles/styles.css">
+    <link type="text/css" rel="stylesheet" href="fullpagejs/fullpage.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+  </head>
+  <body style="transition: 1s">
+    <div class="back"><div class="back-arrow"></div>Back to portfolio</div>
+    <div class="study-container">
+        
+        <div class="study-banner">
+            <h1 class="project-head"><div class="project-icon"></div>Nihal.tv</h1>
+            <p style="margin-top: 0px">Full-stack FIlm Portfolio</p>
+        </div>
+        
+        <div class="project-container full-img">
+            <div class="img-container">
+                <img src="res/portfolio-images/nihal.gif" class="bb-img" placeholder="nihal.tv" />
+            </div>
+            <div class="text-container-bb">
+                <h2>Project Summary</h2>
+                <p>Nihal.tv is a film portfolio showcasing the work of Nihal Dantluri, a Chicago based filmmaker and director of photography.</p>
+                <h2>Creative Process</h2>
+                <p>Nihal.tv was originally meant to be built with Webflow, a powerful CMS tool for dynamic web pages. Due to limitations with Webflow's front end tools, I decided to build Nihal.tv from scratch, using VueJS on the front end and Firebase on the back end. Nihal.tv is comprised of 2 halves, the first being a Firebase powered custom CMS tool that allows the client to upload and remove projects, and the other is a fullscreen carousel of the client's work with animations and interaction meant for public viewing. The custom CMS tool can be seen below.<p>
+                <!--div style="grid-template-columns: 1fr 1fr 1fr" class="double-image">
+                  <img style="margin: 10px; width: 250px; border-radius: 0px" src="res/portfolio-images/backpack-barber/profile.png" />
+                  <img style="margin: 10px; width: 245px; border-radius: 0px" src="res/portfolio-images/backpack-barber/payment.png" />
+                  <img style="margin: 10px; width: 250px; border-radius: 0px" src="res/portfolio-images/backpack-barber/message.png" />
+                </div-->
+                <img src="res/portfolio-images/nihal-editor.png" class="bb-img" placeholder="nihal editor">
+
+                <h2>Results</h2>
+                <p>I learned a lot about full-stack development through this project. It allowed me to play around with REST APIs, asynchronous storage, as well as authentication. VueJS and Firebase is quite a harmonious combination and I had a lot of fun crafting together this portfolio as it's very visual and allowed me to experiment with different interactions, animations and effects.</p>
+                <h2>Link</h2>
+                <p><a href="https://tbrew1023.github.io/Nihal-Public/">View site</a></p>
+            </div>
+            <div style="opacity: 0.6" class="bubble-container">
+                    <a href="https://www.facebook.com/trent.brew.1"><div class="social-bubble" id="facebook"></div></a>
+                    <a href="https://www.instagram.com/trenton_bru/"><div class="social-bubble" id="instagram"></div></a>
+                    <a href="https://twitter.com/trent_brew"><div class="social-bubble" id="twitter"></div></a>
+                    <a href="https://www.pinterest.com/tbrew212/"><div class="social-bubble" id="pinterest"></div></a>
+            </div>
+        </div>
+    </div>
+    <div class="next-project next5"><h4>Next project</h4><div class="forward-arrow"></div></div>
+  </body>
+</html>

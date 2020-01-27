@@ -1,4 +1,15 @@
 $(document).ready(function() {
+    new fullpage('#fullPage', {
+        autoScrolling: true,
+        navigation: true,
+        navigationPosition: 'left',
+        scrollingSpeed: 800,
+        slidesNavigation: true,
+        slidesNavPosition: 'bottom',
+        navigationTooltips: [' ',' ','Design', 'Dev','Games','',''],
+        showActiveTooltip: true
+    });
+
     console.log("i love you");
 
     const heroImg = $('.hero-image');
@@ -40,6 +51,10 @@ $(document).ready(function() {
     const item9 = $('.item9');
     const item10 = $('.item10');
     const item11 = $('.item11');
+    const item12 = $('.item12');
+    const item13 = $('.item13');
+    const item14 = $('.item14');
+    const item15 = $('.item15');
 
     const greetings = document.querySelectorAll('#greetings path');
 
@@ -110,7 +125,7 @@ $(document).ready(function() {
 
         setTimeout(function() {
             window.open('floors.html',"_self");
-        }, 1500); 
+        }, 1000); 
     });
 
     item2.click(function() {
@@ -148,7 +163,7 @@ $(document).ready(function() {
 
         setTimeout(function() {
             window.open('drummerboi.html',"_self");
-        }, 1500); 
+        }, ); 
     });
 
     item3.click(function() {
@@ -186,7 +201,7 @@ $(document).ready(function() {
 
         setTimeout(function() {
             window.open('spotify.html',"_self");
-        }, 1500); 
+        }, 1000); 
     });
 
     item4.click(function() {
@@ -224,7 +239,7 @@ $(document).ready(function() {
 
         setTimeout(function() {
             window.open('material-study.html',"_self");
-        }, 1500); 
+        }, 1000); 
     });
 
     item5.click(function() {
@@ -262,8 +277,8 @@ $(document).ready(function() {
 
         setTimeout(function() {
             console.log('open resume link');
-            window.open('backpack-barber.html',"_self");
-        }, 1500); 
+            window.open('drummerboi.html',"_self");
+        }, 1000); 
     });
 
     item6.click(function() {
@@ -301,8 +316,8 @@ $(document).ready(function() {
 
         setTimeout(function() {
             console.log('open resume link');
-            window.open('solar-system.html',"_self");
-        }, 1500); 
+            window.open('sonic-gx.html',"_self");
+        }, 1000); 
     });
 
     item7.click(function() {
@@ -341,7 +356,7 @@ $(document).ready(function() {
         setTimeout(function() {
             console.log('open resume link');
             window.open('monday-report.html',"_self");
-        }, 1500); 
+        }, 1000); 
     });
 
     item8.click(function() {
@@ -379,8 +394,8 @@ $(document).ready(function() {
 
         setTimeout(function() {
             console.log('open resume link');
-            window.open('coin-tracker.html',"_self");
-        }, 1500); 
+            window.open('jquery-puzzle.html',"_self");
+        }, 1000); 
     });
 
     item9.click(function() {
@@ -419,7 +434,7 @@ $(document).ready(function() {
         setTimeout(function() {
             console.log('open resume link');
             window.open('walls.html',"_self");
-        }, 1500); 
+        }, 1000); 
     });
 
     item10.click(function() {
@@ -458,10 +473,127 @@ $(document).ready(function() {
         setTimeout(function() {
             //console.log('open resume link');
             window.open('coin-tracker.html',"_self");
-        }, 1500); 
+        }, 1000); 
     });
 
-    item11.click(function() {
+    item12.click(function() {
+        $('.next-page-cover').css({
+            'transition': '1s',
+            backgroundColor: '#e0e0e0',
+            //height: '100%',
+        });
+
+        $('.next-page-cover h3').css({
+            'opacity':'0'
+        });
+
+        whiteContainer.css({
+            width: '100%',
+            //background: '#e0e0e0'
+        });
+
+        wave.css({
+            backgroundPositionY: '50%',
+            //background: '#e0e0e0'
+        });
+
+        sectionNav.css({
+            opacity: 0
+        });
+                
+        nav.css({
+            opacity: 0
+        });
+
+        social.css({
+            opacity: 0
+        });
+
+        setTimeout(function() {
+            //console.log('open resume link');
+            window.open('nihal.html',"_self");
+        }, 1000); 
+    });
+
+    item13.click(function() {
+        $('.next-page-cover').css({
+            'transition': '1s',
+            backgroundColor: '#e0e0e0',
+            //height: '100%',
+        });
+
+        $('.next-page-cover h3').css({
+            'opacity':'0'
+        });
+
+        whiteContainer.css({
+            width: '100%',
+            //background: '#e0e0e0'
+        });
+
+        wave.css({
+            backgroundPositionY: '50%',
+            //background: '#e0e0e0'
+        });
+
+        sectionNav.css({
+            opacity: 0
+        });
+                
+        nav.css({
+            opacity: 0
+        });
+
+        social.css({
+            opacity: 0
+        });
+
+        setTimeout(function() {
+            //console.log('open resume link');
+            window.open('coin-tracker.html',"_self");
+        }, 1000); 
+    });
+
+    item14.click(function() {
+        $('.next-page-cover').css({
+            'transition': '1s',
+            backgroundColor: '#e0e0e0',
+            //height: '100%',
+        });
+
+        $('.next-page-cover h3').css({
+            'opacity':'0'
+        });
+
+        whiteContainer.css({
+            width: '100%',
+            //background: '#e0e0e0'
+        });
+
+        wave.css({
+            backgroundPositionY: '50%',
+            //background: '#e0e0e0'
+        });
+
+        sectionNav.css({
+            opacity: 0
+        });
+                
+        nav.css({
+            opacity: 0
+        });
+
+        social.css({
+            opacity: 0
+        });
+
+        setTimeout(function() {
+            //console.log('open resume link');
+            window.open('solar-system.html',"_self");
+        }, 1000); 
+    });
+
+    item15.click(function() {
         $('.next-page-cover').css({
             'transition': '1s',
             backgroundColor: '#e0e0e0',
@@ -497,7 +629,7 @@ $(document).ready(function() {
         setTimeout(function() {
             //console.log('open resume link');
             window.open('booksmart.html',"_self");
-        }, 1500); 
+        }, 1000); 
     });
 
     next1.click(function() {
@@ -550,7 +682,7 @@ $(document).ready(function() {
 
         setTimeout(function() {
             window.open('drummerboi.html',"_self");
-        }, 1500); 
+        }, 1000); 
     });
 
     next2.click(function() {
@@ -597,7 +729,7 @@ $(document).ready(function() {
 
         setTimeout(function() {
             window.open('spotify.html',"_self");
-        }, 1500); 
+        }, 1000); 
     });
 
     next3.click(function() {
@@ -928,17 +1060,6 @@ $(document).ready(function() {
         });*/
     }, 2000);
 
-    new fullpage('#fullPage', {
-        autoScrolling: true,
-        navigation: true,
-        navigationPosition: 'left',
-        scrollingSpeed: 1000,
-        slidesNavigation: true,
-        slidesNavPosition: 'bottom',
-        navigationTooltips: [' ',' ','Design', 'Dev','',''],
-        showActiveTooltip: true
-    });
-
         //----------for mobile----------
 
         if(window.innerWidth <= 768) {
@@ -1000,6 +1121,13 @@ $(document).ready(function() {
                     height: '100%',
                 });
             });
+            item11.click(function() {
+                $('.next-page-cover').css({
+                    'transition': '1s',
+                    backgroundColor: '#181818',
+                    height: '100%',
+                });
+            });
     
             //fullpage_api.setAutoScrolling(false);
         }
@@ -1054,7 +1182,7 @@ $(document).ready(function() {
         setTimeout(function() {
             console.log('open resume link');
             window.open('resume.html',"_self");
-        }, 1500);
+        }, 1000);
     });
 
     back.click(function() {

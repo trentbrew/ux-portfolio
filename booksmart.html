@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+    <script src="fullpagejs/fullpage.js"></script>
+    <script src="app.js"></script>
+    <link type="text/css" rel="stylesheet" href="styles/styles.css">
+    <link type="text/css" rel="stylesheet" href="fullpagejs/fullpage.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+  </head>
+  <body style="transition: 1s">
+    <div class="back"><div class="back-arrow"></div>Back to portfolio</div>
+    <div class="study-container">
+        
+        <div class="study-banner">
+            <h1 class="project-head"><div class="project-icon"></div>Booksmart</h1>
+            <p style="margin-top: 0px">Bookmark management chrome extention</p>
+        </div>
+        
+        <div class="project-container full-img">
+            <div class="img-container">
+                <img src="res/portfolio-images/booksmart.gif" class="bb-img" placeholder="nihal.tv" />
+            </div>
+            <div class="text-container-bb">
+                <h2>Project Summary</h2>
+                <p>Booksmart is a Chrome extension that aims to help users manage their browser bookmarks by introducing a customizable folder interface with grouped URLs. </p>
+                <!--div style="background-image: url('res/portfolio-images/backpack-barber/bb-logo.png'); background-position: center; background-size: 105%; border-radius: 100%; height: 200px; width: 200px; margin-right: auto; margin-left: auto; box-shadow: 0px 7px 17px -1px rgba(0,0,0,0.2);"></div-->
+                <h2>Creative Process</h2>
+                <p>Booksmart was built using HTML, SASS, and JQuery. Assets such as the folder icon were made as vector images using Figma. The draggable interface is powered by JQuery UI and Packery. Loading multiple tabs at once was a big challenge since the normal window.open function only allows for one tab to be opened even for multiple calls. This is due to Chrome's popup-blocking, but I was able to accomplish loading multiple tabs by adjusting the permissions in the manifest file and using the chrome.tabs.create method.<p>
+                <!--div style="grid-template-columns: 1fr 1fr 1fr" class="double-image">
+                  <img style="margin: 10px; width: 250px; border-radius: 0px" src="res/portfolio-images/backpack-barber/profile.png" />
+                  <img style="margin: 10px; width: 245px; border-radius: 0px" src="res/portfolio-images/backpack-barber/payment.png" />
+                  <img style="margin: 10px; width: 250px; border-radius: 0px" src="res/portfolio-images/backpack-barber/message.png" />
+                </div-->
+                <h2>Results</h2>
+                <p>I learned a lot about full-stack development through this project. It allowed me to play around with REST APIs, asynchronous storage, as well as authentication. VueJS and Firebase is quite a harmonious combination and I had a lot of fun crafting together this portfolio as it's very visual and allowed me to experiment with different interactions, animations and effects.</p>
+                <h2>Link</h2>
+                <p><a href="https://tbrew1023.github.io/Nihal-Public/">View site</a></p>
+            </div>
+            <div style="opacity: 0.6" class="bubble-container">
+                    <a href="https://www.facebook.com/trent.brew.1"><div class="social-bubble" id="facebook"></div></a>
+                    <a href="https://www.instagram.com/trenton_bru/"><div class="social-bubble" id="instagram"></div></a>
+                    <a href="https://twitter.com/trent_brew"><div class="social-bubble" id="twitter"></div></a>
+                    <a href="https://www.pinterest.com/tbrew212/"><div class="social-bubble" id="pinterest"></div></a>
+            </div>
+        </div>
+    </div>
+    <div class="next-project next5"><h4>Next project</h4><div class="forward-arrow"></div></div>
+  </body>
+</html>
