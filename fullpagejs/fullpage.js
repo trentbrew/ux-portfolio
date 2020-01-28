@@ -1703,7 +1703,7 @@
             console.log(v.sectionIndex);
 
             if (v.sectionIndex > 0) {
-                document.querySelector('.white-container').style.width = '30%';
+                document.querySelector('.white-container').style.width = '25%';
                 //document.querySelectorAll('.port-item-container').style.background = 'red';
                 //document.querySelector('.white-container').style.background = 'black';
 
@@ -1725,7 +1725,7 @@
                 document.querySelector('.wave').style.backgroundPositionY = '180%';
             }
             else {
-                document.querySelector('.white-container').style.width = '80%';
+                document.querySelector('.white-container').style.width = '81%';
                 //document.querySelector('.white-container').style.filter = 'blur(0)';
 
                 if(window.innerWidth <= 768) {

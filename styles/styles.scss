@@ -234,8 +234,8 @@ body {
   
   .social-bubble {
     //background-color: white;
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     //border-radius: 100%;
     margin-right: 7px;
     margin-left: 7px;
@@ -249,12 +249,12 @@ body {
   
     &:hover {
       cursor: pointer;
-      transform: scale(1.3);
+      transform: scale(1.2);
     }
   }
   
   #facebook {
-    background-image: url("../res/facebook-icon-min.png");
+    background-image: url("../res/github.png");
     //filter: invert(1);
   }
   
@@ -270,6 +270,11 @@ body {
   
   #pinterest {
     background-image: url("../res/pinterest-icon-min.png");
+    //filter: invert(1);
+  }
+
+  #linkedin {
+    background-image: url("../res/linkedin.png");
     //filter: invert(1);
   }
   
@@ -295,7 +300,7 @@ body {
 .sec2 {
     //background: linear-gradient(#88A8C6, #CEACD5);
     font-size: 18px;
-    margin-left: 300px;
+    margin-left: 250px;
 
     .ohai-image {
       background-image: url('../res/ohai.gif');
@@ -508,6 +513,7 @@ body {
       .nav-item {
         text-decoration: none;
         height: 60px;
+
   
         &:hover {
           cursor: pointer;
@@ -792,6 +798,10 @@ body {
     &:hover {
         background: rgba(0,0,0,0);
         cursor: default;
+        .port-img {
+          transform: scale(1);
+          box-shadow: none;
+        }
     }
   }
 
@@ -813,6 +823,10 @@ body {
   .port-contact {
       &:hover {
           background: rgba(black, 0.2);
+          .port-img {
+            transform: scale(1);
+            box-shadow: none;
+          }
       }
   }
 
@@ -1727,6 +1741,7 @@ body {
         padding: 20px 0px 0px 0px;
         margin: 0px;
         border-radius: 0px;
+        transform: scale(0.8);
     }
 
     .art-item-container img {
@@ -1799,7 +1814,9 @@ body {
 
     .port-img6 {
       background-color: rgba(0,0,0,0);
-      background-image: url('../res/saturn.png');
+      background-image: url('../res/portfolio-images/sonic/sonic-icon2.png');
+      background-size: contain;
+      filter: brightness(0);
       //filter: invert(1);
     }
 
@@ -1819,6 +1836,30 @@ body {
     .port-img9 {
       background-color: rgba(0,0,0,0);
       background-image: url('../res/maze-icon.png');
+      //filter: invert(1);
+    }
+
+    .port-img12 {
+      background-color: rgba(0,0,0,0);
+      background-image: url('../res/videocam-24px.svg');
+      //filter: invert(1);
+    }
+
+    .port-img13 {
+      background-color: rgba(0,0,0,0);
+      background-image: url('../res/attach_money-24px.svg');
+      //filter: invert(1);
+    }
+
+    .port-img14 {
+      background-color: rgba(0,0,0,0);
+      background-image: url('../res/saturn.png');
+      //filter: invert(1);
+    }
+
+    .port-img15 {
+      background-color: rgba(0,0,0,0);
+      background-image: url('../res/book-24px.svg');
       //filter: invert(1);
     }
 
