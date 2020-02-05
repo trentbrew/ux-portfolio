@@ -866,6 +866,12 @@ a {
   }
 }
 
+.res-page-body {
+  background: #e0e0e0;
+  -webkit-transition: background-color 1s ease;
+  transition: background-color 1s ease;
+}
+
 .page-container {
   background-color: #fff;
   margin: 20vh auto 80px auto;
