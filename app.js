@@ -3,7 +3,7 @@ $(document).ready(function() {
         autoScrolling: true,
         navigation: true,
         navigationPosition: 'left',
-        scrollingSpeed: 800,
+        scrollingSpeed: 600,
         slidesNavigation: true,
         slidesNavPosition: 'bottom',
         navigationTooltips: [' ',' ','Design', 'Dev','Games','',''],
