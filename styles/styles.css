@@ -866,6 +866,10 @@ a {
   }
 }
 
+.res-page-body {
+  background: #e0e0e0;
+}
+
 .page-container {
   background-color: #fff;
   margin: 20vh auto 80px auto;
