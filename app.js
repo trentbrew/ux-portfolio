@@ -1228,8 +1228,7 @@ $(document).ready(function() {
 
         projectHeader.css({
             marginTop: '40px',
-            opacity: '0 !important',
-            filter: 'brightness(0.1)'
+            opacity: '0 !important'
         });
 
         download.css({
