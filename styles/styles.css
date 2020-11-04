@@ -267,7 +267,7 @@ h3 {
   background-size: contain;
   background-repeat: no-repeat;
   margin-top: 5px;
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: margin-top 1s, opacity 1s, -webkit-transform 300ms;
   transition: margin-top 1s, opacity 1s, -webkit-transform 300ms;
   transition: margin-top 1s, opacity 1s, transform 300ms;
@@ -1348,8 +1348,8 @@ a {
   margin-left: auto;
   margin-right: auto;
   background: #181818;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-animation: rise 1s ease forwards 1s;
+          animation: rise 1s ease forwards 1s;
 }
 
 .study-container a {
@@ -1386,8 +1386,6 @@ a {
   left: 0px;
   height: 100vh;
   z-index: -1;
-  -webkit-transition: 1s;
-  transition: 1s;
 }
 
 .study-container .img-container img {
@@ -1418,7 +1416,7 @@ a {
   display: -ms-flexbox;
   display: flex;
   margin: auto;
-  top: 60px;
+  top: 0px;
   right: 0px;
   height: -webkit-max-content;
   height: -moz-max-content;
@@ -1462,13 +1460,15 @@ a {
   background: #88C69D;
   padding: 20px 40px 20px 40px;
   border-radius: 10px;
-  -webkit-transition: 300ms;
-  transition: 300ms;
   font-weight: bold;
 }
 
 .text-container-bb a:hover {
   background: #578065;
+}
+
+.text-container-bb h2 {
+  color: white;
 }
 
 .project-banner {
@@ -1510,11 +1510,14 @@ a {
   line-height: 30px;
   background: rgba(0, 0, 0, 0);
   border-radius: 15px 15px 15px 15px;
-  -webkit-transition: 1s;
-  transition: 1s;
   opacity: 0;
-  color: rgba(0, 0, 0, 0.8) p;
-  color-font-size: 22px;
+  color: rgba(0, 0, 0, 0.8);
+  -webkit-animation: rise 1s ease forwards 1s;
+          animation: rise 1s ease forwards 1s;
+}
+
+.project-container p {
+  font-size: 22px;
 }
 
 .full-img {
@@ -1662,7 +1665,9 @@ a {
   }
   .study-container .bubble-container {
     opacity: 1;
-    position: relative;
+    position: fixed;
+    top: 0px;
+    right: -100px;
   }
   .study-container .bubble-container a {
     -webkit-filter: invert(1);

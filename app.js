@@ -1039,8 +1039,8 @@ $(document).ready(function() {
         });
 
         projectContainer.css({
-            marginTop: '40px',
-            opacity: 1
+            //marginTop: '40px',
+            //opacity: 1
         });
 
         download.css({
@@ -1203,13 +1203,14 @@ $(document).ready(function() {
             });
 
             setTimeout(function() {
-                window.open('index.html', '_self');
+                window.history.back();
             }, 1000);
         }
 
         pageContainer.css({
-            marginTop: '180px',
-            opacity: 0
+            //marginTop: '180px',
+            opacity: '0 !important',
+
         });
 
         nextProject.css({
@@ -1223,12 +1224,13 @@ $(document).ready(function() {
 
         projectContainer.css({
             marginTop: '40px',
-            opacity: 0
+            opacity: '0 !important'
         });
 
         projectHeader.css({
             marginTop: '40px',
-            opacity: '0 !important'
+            opacity: '0 !important',
+            filter: 'brightness(0.1)'
         });
 
         download.css({
