@@ -998,13 +998,13 @@ $(document).ready(function() {
         });
 
         projectHeader.css({
-            marginTop: '0px',
+            //marginTop: '0px',
             opacity: 1
         });
 
         pageContainer.css({
-            marginTop: '140px',
-            opacity: 1
+            //marginTop: '140px',
+            //opacity: 1
         });
 
         sectionNav.css({
