@@ -6,7 +6,7 @@ $(document).ready(function() {
         scrollingSpeed: 600,
         slidesNavigation: true,
         slidesNavPosition: 'bottom',
-        navigationTooltips: [' ',' ','Design', 'Dev','Games','',''],
+        navigationTooltips: [' ',' ','Client Work', 'Personal Projects','Games','',''],
         showActiveTooltip: true
     });
 
@@ -124,7 +124,7 @@ $(document).ready(function() {
         }, 1000);*/ 
 
         setTimeout(function() {
-            window.open('floors.html',"_self");
+            window.open('jiyoun.html',"_self");
         }, 1000); 
     });
 
@@ -162,7 +162,7 @@ $(document).ready(function() {
         });
 
         setTimeout(function() {
-            window.open('drummerboi.html',"_self");
+            window.open('hbrc.html',"_self");
         }, ); 
     });
 
@@ -355,7 +355,7 @@ $(document).ready(function() {
 
         setTimeout(function() {
             console.log('open resume link');
-            window.open('monday-report.html',"_self");
+            window.open('eric.html',"_self");
         }, 1000); 
     });
 
@@ -472,7 +472,7 @@ $(document).ready(function() {
 
         setTimeout(function() {
             //console.log('open resume link');
-            window.open('coin-tracker.html',"_self");
+            window.open('jiyoun.html',"_self");
         }, 1000); 
     });
 
@@ -550,7 +550,7 @@ $(document).ready(function() {
 
         setTimeout(function() {
             //console.log('open resume link');
-            window.open('coin-tracker.html',"_self");
+            window.open('raster.html',"_self");
         }, 1000); 
     });
 

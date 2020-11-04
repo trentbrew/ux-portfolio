@@ -584,7 +584,7 @@ body {
     //background: gray;
     //width: 50%;
     //height: 70%;
-    margin-left: 12%;
+    margin-left: 14.5%;
     color: white;
     width: fit-content;
   }
@@ -625,7 +625,7 @@ body {
     //opacity: 0.3;
     margin-right: 40px;
     width: 250px;
-    height: 125px;
+    height: 140px;
     border-radius: 10px;
     transition: 300ms;
     box-shadow: 0px 7px 17px -1px rgba(0,0,0,0.2);
@@ -649,13 +649,13 @@ body {
   }
 
   .port-img1 {
-      background-image: url('../res/portfolio-images/floors/full-mockup-v3\(small\).png');
+      background-image: url('../res/portfolio-images/jiyoun.gif');
       background-size: cover;
       background-repeat: no-repeat;
   }
 
   .port-img2 {
-    background-image: url('../res/portfolio-images/backpack-barber/backpack_barber_full_mockup_v8.png');
+    background-image: url('../res/portfolio-images/hbrc.gif');
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -692,7 +692,7 @@ body {
   }
 
   .port-img7 {
-    background-image: url('../res/portfolio-images/monday-analysis2.gif');
+    background-image: url('../res/portfolio-images/eric.gif');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -720,7 +720,7 @@ body {
   }
 
   .port-img13 {
-    background-image: url('../res/portfolio-images/coin-tracker.gif');
+    background-image: url('../res/portfolio-images/raster.gif');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -731,6 +731,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    filter: contrast(0.9);
   }
 
   .port-img15 {
@@ -902,6 +903,10 @@ body {
     padding: $GlobalPadding + 10px;
     display: inline-flex;
     border-radius: 10px 10px 10px 10px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
   
     .circle-image {
       background-color: $ColorLightGray;
@@ -916,6 +921,7 @@ body {
   
     .head-text {
       //padding-left: 20px;
+      width: 100%;
   
       h1 {
         font-weight: normal;
@@ -933,6 +939,9 @@ body {
   .res-neck {
     background-color: $ColorPrimary;
     padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     //position: absolute;
     //left: 0;
     //border-radius: 100px 100px 100px 100px;

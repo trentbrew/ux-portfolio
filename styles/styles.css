@@ -591,7 +591,7 @@ a {
 }
 
 .port-container {
-  margin-left: 12%;
+  margin-left: 14.5%;
   color: white;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -640,7 +640,7 @@ a {
   background: black;
   margin-right: 40px;
   width: 250px;
-  height: 125px;
+  height: 140px;
   border-radius: 10px;
   -webkit-transition: 300ms;
   transition: 300ms;
@@ -664,13 +664,13 @@ a {
 }
 
 .port-img1 {
-  background-image: url("../res/portfolio-images/floors/full-mockup-v3(small).png");
+  background-image: url("../res/portfolio-images/jiyoun.gif");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .port-img2 {
-  background-image: url("../res/portfolio-images/backpack-barber/backpack_barber_full_mockup_v8.png");
+  background-image: url("../res/portfolio-images/hbrc.gif");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -704,7 +704,7 @@ a {
 }
 
 .port-img7 {
-  background-image: url("../res/portfolio-images/monday-analysis2.gif");
+  background-image: url("../res/portfolio-images/eric.gif");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -732,7 +732,7 @@ a {
 }
 
 .port-img13 {
-  background-image: url("../res/portfolio-images/coin-tracker.gif");
+  background-image: url("../res/portfolio-images/raster.gif");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -915,6 +915,14 @@ a {
   display: -ms-inline-flexbox;
   display: inline-flex;
   border-radius: 10px 10px 10px 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  text-align: center;
 }
 
 .res-head .circle-image {
@@ -926,6 +934,10 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.res-head .head-text {
+  width: 100%;
 }
 
 .res-head .head-text h1 {
@@ -942,6 +954,15 @@ a {
 .res-neck {
   background-color: black;
   padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .res-neck .res-contact {
