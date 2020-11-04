@@ -7,6 +7,7 @@ $(document).ready(function() {
         slidesNavigation: true,
         slidesNavPosition: 'bottom',
         navigationTooltips: [' ',' ','Client Work', 'Personal Projects','Games','',''],
+        anchors:['home','home','client_work','personal_projects','games','illustrations','contact'],
         showActiveTooltip: true
     });
 
@@ -1227,7 +1228,8 @@ $(document).ready(function() {
 
         projectHeader.css({
             marginTop: '40px',
-            opacity: 0
+            opacity: '0 !important',
+            filter: 'brightness(0.1)'
         });
 
         download.css({
