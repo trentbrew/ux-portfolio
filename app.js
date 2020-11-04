@@ -1188,24 +1188,7 @@ $(document).ready(function() {
 
     back.click(function() {
 
-        if(window.innerWidth <=768) {
-            $('body').css('background-color','#181818');
-
-            setTimeout(function() {
-                window.open('index.html', '_self');
-            }, 1000);
-        }
-        else {
-            $('body').css('background-color','#181818');
-
-            studyBackdrop.css({
-                height: '100vh'
-            });
-
-            setTimeout(function() {
-                window.history.back();
-            }, 1000);
-        }
+        window.history.back();
 
         pageContainer.css({
             //marginTop: '180px',
@@ -1250,20 +1233,8 @@ $(document).ready(function() {
     });
     
     back2.click(function() {
-        if(window.innerWidth <=768) {
-            $('body').css('background-color','#181818');
-
-            setTimeout(function() {
-                window.open('index.html', '_self');
-            }, 1000);
-        }
-        else {
-            $('body').css('background-color','#181818');
-
-            setTimeout(function() {
-                window.open('index.html', '_self');
-            }, 1000);
-        }
+        
+        window.history.back();
 
         pageContainer.css({
             marginTop: '180px',
